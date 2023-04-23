@@ -57,7 +57,7 @@
 }
 
 // メニューボタンクリック時のボタン変形
-.is-open .p-menuButton__trigger__bar {
+.u-state__open .p-menuButton__trigger__bar {
   &:nth-of-type(1) {
     transform: translate(-50%, -50%) rotate(-25deg);
   }
@@ -120,7 +120,7 @@
   }
 }
 
-.is-open {
+.u-state__open {
   & .p-menu__bg {
     width: calc(100% - rem(520));
   }

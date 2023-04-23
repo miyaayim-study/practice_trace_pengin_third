@@ -1,8 +1,31 @@
-@use "../../global" as *;
+@use "../../global/" as *;
 
 .p-culture {
+  &__wrapper {
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+
+    @include mq(tab) {
+      padding-top: rem(60);
+    }
+    @include mq(pc) {
+      padding-top: 0;
+    }
+  }
+
+  &__container {
+    max-width: rem(520);
+    margin-left: 0;
+  }
+
   &__img {
     margin-top: rem(30);
+
+    &.u-state__hide {
+      opacity: 0;
+      transform: translateX(30%);
+      transition: all 2s cubic-bezier(0.23, 1, 0.32, 1); // easeOutQuint
+    }
   }
 
   &__text {

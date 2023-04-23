@@ -1,0 +1,12 @@
+<% const newsLists = [
+  {data: '2020.02.01', text: 'イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」'},
+  {data: '2020.01.18', text: 'プレスリリースのお知らせ DIGGIN’ RECORDS'},
+  {data: '2020.01.01', text: '新年明けましておめでとうございます'},
+];
+newsLists.forEach((value) => {
+%>
+  <li class="p-newsList__item">
+    <p class="p-newsList__item__data"><%= value.data %></p>
+    <p class="p-newsList__item__text"><%= value.text %></p>
+  </li>
+<% }); %>

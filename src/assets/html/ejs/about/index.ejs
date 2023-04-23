@@ -1,5 +1,5 @@
 <%# ページIDを入力する %>
-<% pageId = 'top'; %>
+<% pageId = 'about'; %>
 
 <%# グローバル変数（全部に渡す） %>
 <%
@@ -20,20 +20,8 @@ const test = json.pages[pageId].dir;
 
 <%# メイン %>
 <!-- メイン -->
-<main class="l-main u-overflow--hidden">
-  <%- include(json.pages[pageId].dir + '_contents/_top/_cover.ejs') %>
-  <%- include(json.pages[pageId].dir + '_contents/_top/_about.ejs') %>
+<main class="l-main__about">
 
-  <div class="c-sectionBg c-sectionPading">
-    <div class="c-sectionBg--top"></div>
-    <div class="c-sectionFlex c-sectionWidth">
-      <%- include(json.pages[pageId].dir + '_contents/_top/_works.ejs') %>
-      <%- include(json.pages[pageId].dir + '_contents/_top/_culture.ejs') %>
-    </div>
-  </div>
-
-  <%- include(json.pages[pageId].dir + '_contents/_top/_topics.ejs') %>
-  <%- include(json.pages[pageId].dir + '_contents/_top/_contact.ejs') %>
 </main>
 
 <%# フッター %>

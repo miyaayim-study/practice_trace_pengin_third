@@ -1,7 +1,7 @@
   <!-- ヘッダー -->
   <header class="l-header">
     <!-- ヘッダーロゴ -->
-    <a href="#" class="l-header__logo">
+    <a href="<%= pageId === 'top' ? '#' : baseUrl %>" class="l-header__logo">
       <img src="<%= imgUrl %>header_logo.svg" alt="DIGSMAILE INC.">
     </a>
     
@@ -16,25 +16,18 @@
     </button>
 
     <!-- メニューナビゲーション -->
-    <div class="p-menu is-close js-menu">
+    <div class="p-menu u-state__close js-menu">
 
       <div class="p-menu__bg"></div>
 
       <div class="p-menu__wrap">
         <nav class="p-menu__wrap__nav">
-          <a href="#"><img class="p-menu__wrap__nav__logo" src="<%= imgUrl %>menu_logo.png" alt="DIGSMAILE INC."></a>
+          <a href="<%= pageId === 'top' ? '#' : baseUrl %>"><img class="p-menu__wrap__nav__logo" src="<%= imgUrl %>menu_logo.png" alt="DIGSMAILE INC."></a>
+
           <ul class="p-menu__wrap__nav__list">
-            <li class="u-hover__underLine--center"><a href="#about">ABOUT US</a></li>
-            <li class="u-hover__underLine--center"><a href="#works">WORKS</a></li>
-            <li class="u-hover__underLine--center"><a href="#culture">CULTURE</a></li>
-            <li class="u-hover__underLine--center"><a href="#topics">TOPICS</a></li>
-            <li class="u-hover__underLine--center"><a href="#contact">CONTACT</a></li>
+            <%- include('../_modules/_menuList.ejs') %>
           </ul>
         </nav>
       </div>
-
     </div>
-
   </header>
-<!-- メイン -->
-<main>

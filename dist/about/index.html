@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <title>aboutDESIGN FOR SMILE.</title>
-  <meta name="description" content="デザインで人を笑顔にする会社 DESIGN FOR SMILE.">
+  <meta name="description" content="DIGSMAILEについて">
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,34 +19,51 @@
   <!-- ヘッダー -->
   <header class="l-header">
     <!-- ヘッダーロゴ -->
-    <a href="#" class="l-header__logo">
-      <!-- <img src="../../../../../dist/assets/images/header_logo.svg" alt="DIGSMAILE INC."> -->
-      <!-- <img src="../../../../../dist/assets/images/header_logo.svg" alt="DIGSMAILE INC."> -->
+    <a href="../" class="l-header__logo">
+      <img src="../assets/images/header_logo.svg" alt="DIGSMAILE INC.">
     </a>
-    <!-- ハンバーガーボタン -->
-    <button type="button" class="p-menu-button">
-      <span class="p-menu-button__bar"></span>
-      <span class="p-menu-button__bar"></span>
-      <span class="p-menu-button__bar"></span>
-      <span class="p-menu-button__title">MENU</span>
+    <!-- メニューボタン -->
+    <button type="button" class="p-menuButton js-menuButton">
+      <div class="p-menuButton__trigger">
+        <span class="p-menuButton__trigger__bar"></span>
+        <span class="p-menuButton__trigger__bar"></span>
+        <span class="p-menuButton__trigger__bar"></span>
+      </div>
+      <span class="p-menuButton__title">MENU</span>
     </button>
+    <!-- メニューナビゲーション -->
+    <div class="p-menu u-state__close js-menu">
+      <div class="p-menu__bg"></div>
+      <div class="p-menu__wrap">
+        <nav class="p-menu__wrap__nav">
+          <a href="../"><img class="p-menu__wrap__nav__logo" src="../assets/images/menu_logo.png" alt="DIGSMAILE INC."></a>
+          <ul class="p-menu__wrap__nav__list">
+            <li class="u-hover__underLine--center"><a href="#">
+                <p>ABOUT US</p>
+              </a></li>
+            <li class="u-hover__underLine--center"><a href="../#works">
+                <p>WORKS</p>
+              </a></li>
+            <li class="u-hover__underLine--center"><a href="../#culture">
+                <p>CULTURE</p>
+              </a></li>
+            <li class="u-hover__underLine--center"><a href="../#topics">
+                <p>TOPICS</p>
+              </a></li>
+            <li class="u-hover__underLine--center"><a href="../contact/">
+                <p>CONTACT</p>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
   <!-- メイン -->
-  <main>
-    <h2>Main Content</h2>
-    <a href="#">
-      <img src="assets/images/sample.jpeg" alt="sample">
-    </a>
+  <main class="l-main__about">
   </main>
   <!-- フッター -->
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="/home/">home</a></li>
-        <li><a href="/about/">about</a></li>
-      </ul>
-    </nav>
-    <p><small>（c）DESIGN FOR SMILE.</small></p>
+  <footer class="l-footer">
+    <small class="p-copyright">©2018 DIGSMILE INC.</small>
   </footer>
   <!-- Javascript -->
   <script src="../assets/js/main.js"></script>

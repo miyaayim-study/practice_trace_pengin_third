@@ -1,0 +1,13 @@
+<% const menuLists = [
+  {pageId: 'about', baseUrl: 'about/', pageName: 'ABOUT US'},
+  {pageId: 'works', baseUrl: '#works', pageName: 'WORKS'},
+  {pageId: 'culture', baseUrl: '#culture', pageName: 'CULTURE'},
+  {pageId: 'topics', baseUrl: '#topics', pageName: 'TOPICS'},
+  {pageId: 'contact', baseUrl: 'contact/', pageName: 'CONTACT'},
+];
+
+menuLists.forEach((value) => {
+  const href = ( pageId === value.pageId ? '#' : baseUrl + value.baseUrl );
+%>
+  <li class="u-hover__underLine--center"><a href="<%= href %>"><p><%= value.pageName %></p></a></li>
+<% }); %>
