@@ -6,7 +6,7 @@
     font-weight: $f-weigth-medium;
     font-size: rem(14);
     line-height: lh(14, 28);
-    color: #333;
+    color: $color-black;
     margin-top: rem(30);
     
     @include mq(tab) {

@@ -7,7 +7,7 @@ const menuButton = () => {
   });
   window.addEventListener('resize', () => {
     button.classList.remove('is-open');
-    menu.classList.toggle('is-open');
+    menu.classList.remove('is-open');
   });
 };
 

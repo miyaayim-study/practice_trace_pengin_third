@@ -32,7 +32,7 @@
       font-family: $f-family-secondary;
       font-weight: $f-weigth-bold;
       font-size: rem(12);
-      color: #333;
+      color: $color-black;
 
       @include mq(tab) {
         font-size: rem(14);

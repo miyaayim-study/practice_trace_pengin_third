@@ -20,7 +20,7 @@
     left: 0;
     bottom: 0;
     margin: auto;
-    background-color: #fff;
+    background-color: $color-white;
     transform-origin: center top;
     transform: scale(0, 1);
     transition: transform .3s;
@@ -43,7 +43,7 @@
     left: 0;
     bottom: 0;
     margin: auto;
-    background-color: #fff;
+    background-color: $color-white;
     transform-origin: right top;
     transform: scale(0, 1);
     transition: transform .3s;
