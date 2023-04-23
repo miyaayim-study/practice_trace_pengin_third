@@ -1,0 +1,17 @@
+@use "../../global" as *;
+
+.p-works {
+  &__img {
+    margin-top: rem(30);
+  }
+
+  &__text {
+    font-family: $f-family-body;
+    font-weight: $f-weigth-medium;
+    margin-top: rem(28);
+  }
+
+  &__button {
+    margin-top: rem(28);
+  }
+}

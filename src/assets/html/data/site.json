@@ -1,0 +1,37 @@
+{
+  "siteInfo": {
+    "name": "DESIGN FOR SMILE.",
+    "siteUrl": "SiteDomain"
+  },
+  "pages": {
+    "home": {
+      "dir": "",
+      "name": "home",
+      "description": "デザインで人を笑顔にする会社 DESIGN FOR SMILE."
+    },
+    "about": {
+      "dir": "../",
+      "name": "about",
+      "description": "DIGSMAILEについて"
+    },
+    "contact": {
+      "dir": "../",
+      "name": "contact",
+      "description": "お問い合わせ"
+    }
+  },
+  "news": {
+    "20200101": {
+      "data": "2020.01.01",
+      "text": "新年明けましておめでとうございます"
+    },
+    "20200118": {
+      "data": "2020.01.18",
+      "text": "プレスリリースのお知らせ DIGGIN’ RECORDS"
+    },
+    "20200201": {
+      "data": "2020.02.01",
+      "text": "イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」"
+    }
+  }
+}

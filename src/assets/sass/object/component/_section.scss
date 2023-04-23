@@ -1,0 +1,46 @@
+@use "../../global/" as *;
+
+.c-sectionWidth {
+  max-width: rem(1100);
+  margin: auto;
+}
+
+.c-sectionFlex {
+  @include mq(pc) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(80);
+    padding-bottom: rem(60);
+  }
+}
+
+.c-sectionPading {
+  padding-left: rem(15);
+  padding-right: rem(15);
+}
+
+.c-sectionTitle {
+  font-family: $f-family-heading;
+  font-size: rem(28);
+  letter-spacing: ls(68);
+  color: #333;
+
+  @include mq(tab) {
+    font-size: rem(32);
+  }
+}
+
+.c-sectionBg {
+  position: relative;
+  background-color: #F0F0F0;
+}
+
+.c-sectionBg--top {
+  position: absolute;
+  top: rem(-100);
+  left: 0;
+  width: 100%;
+  height: rem(100);
+  background-color: #F0F0F0;
+  z-index: -1;
+}

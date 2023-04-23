@@ -1,0 +1,22 @@
+@use "../global" as *;
+
+.l-header {
+
+  &__logo {
+    position: absolute;
+    top: rem(19.8);
+    left: rem(15);
+    max-width: rem(189);
+    z-index: 2;
+
+    @include mq(tab) {
+      top: rem(33.8);
+      left: rem(30);
+    }
+    @include mq(pc) {
+      top: rem(30);
+      left: rem(58);
+      max-width: rem(260);
+    }
+  }
+}

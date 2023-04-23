@@ -1,0 +1,21 @@
+@use "../../global" as *;
+
+
+.p-topics {
+  &__container {
+    margin-top: rem(28);
+
+    @include mq(pc) {
+      max-width: rem(700);
+      margin-left: auto;
+    }
+  }  
+
+  &__button {
+    margin-top: rem(30);
+
+    @include mq(pc) {
+      margin-left: auto;
+    }
+  }
+}

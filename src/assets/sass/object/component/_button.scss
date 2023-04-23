@@ -1,0 +1,19 @@
+@use "../../global/" as *;
+
+.c-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: rem(160);
+  height: rem(36);
+  font-size: rem(11);
+  font-family: $f-family-primary;
+  font-weight: $f-weigth-bold;
+  color: #fff;
+  background-color: #000;
+  transition: all 0.3s ease;
+
+  @include mq(pc) {
+    font-size: rem(12);
+  }
+}

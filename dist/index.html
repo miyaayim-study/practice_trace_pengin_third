@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>DESIGN FOR SMILE.</title>
+  <meta name="description" content="デザインで人を笑顔にする会社 DESIGN FOR SMILE.">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- リセットCSS -->
+  <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+  <!-- CSS-->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="l-header">
+    <!-- ヘッダーロゴ -->
+    <a href="#" class="l-header__logo">
+      <img src="assets/images/header_logo.svg" alt="DIGSMAILE INC.">
+    </a>
+    <!-- メニューボタン -->
+    <button type="button" class="p-menuButton js-menuButton">
+      <div class="p-menuButton__trigger">
+        <span class="p-menuButton__trigger__bar"></span>
+        <span class="p-menuButton__trigger__bar"></span>
+        <span class="p-menuButton__trigger__bar"></span>
+      </div>
+      <span class="p-menuButton__title">MENU</span>
+    </button>
+    <!-- メニューナビゲーション -->
+    <div class="p-menu is-close js-menu">
+      <div class="p-menu__bg"></div>
+      <div class="p-menu__wrap">
+        <nav class="p-menu__wrap__nav">
+          <a href="#"><img class="p-menu__wrap__nav__logo" src="assets/images/menu_logo.png" alt="DIGSMAILE INC."></a>
+          <ul class="p-menu__wrap__nav__list">
+            <li class="u-hover__underLine--center"><a href="#about">ABOUT US</a></li>
+            <li class="u-hover__underLine--center"><a href="#works">WORKS</a></li>
+            <li class="u-hover__underLine--center"><a href="#culture">CULTURE</a></li>
+            <li class="u-hover__underLine--center"><a href="#topics">TOPICS</a></li>
+            <li class="u-hover__underLine--center"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- メイン -->
+  <main>
+    <!-- カバー -->
+    <section class="l-cover">
+      <div class="l-cover__wrapper">
+        <div class="p-cover__bg"></div>
+        <!-- カルーセル -->
+        <div class="p-carousel">
+          <!-- Sliderを包むコンテナ要素 -->
+          <div class="swiper">
+            <!-- スライド要素を包む要素 -->
+            <div class="swiper-wrapper">
+              <!-- 各スライド -->
+              <div class="swiper-slide slideImg--1"></div>
+              <div class="swiper-slide slideImg--2"></div>
+              <div class="swiper-slide slideImg--3"></div>
+              <div class="swiper-slide slideImg--4"></div>
+            </div>
+            <!-- ページネーション -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <h1 class="p-cover__catch">
+          <p class="p-cover__catch__text u-font--body u-bold js-showTarget is-hide__fadeIn--top is-delay--300ms">デザインで人を笑顔にする会社</p>
+          <p class="p-cover__catch__text u-font--heading u-bold js-showTarget is-hide__fadeIn--top is-delay--300ms">DIGSMILE INC.</p>
+          <p class="p-cover__catch__name js-showTarget is-hide__fadeIn--Right">DESIGN<br>FOR<br>SMILE.</p>
+        </h1>
+        <p class="p-cover__scroll">SCROLL</p>
+      </div>
+    </section>
+    <!-- ABOUT US -->
+    <section id="about" class="l-about">
+      <div class="l-about__wrapper c-sectionPading c-sectionWidth">
+        <div class="l-about__wrapper__container js-showTarget is-hide__fadeIn--Center">
+          <h2 class="p-about__sectionTitle c-sectionTitle">ABOUT US</h2>
+          <p class="p-about__text">DIGSMILEは、デザインで人を笑顔にする会社。<br>なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>DIGSMILEの社名にはそんな想いが込められています。</p>
+          <a class="p-about__button c-button u-hover__opacity" href="#">READ MORE</a>
+        </div>
+      </div>
+    </section>
+    <div class="c-sectionBg c-sectionPading">
+      <div class="c-sectionBg--top"></div>
+      <div class="c-sectionFlex c-sectionWidth">
+        <!-- WORKS -->
+        <section id="works" class="l-works">
+          <div class="l-works__wrapper c-sectionWidth">
+            <div class="l-works__container">
+              <h2 class="p-works__sectionTitle c-sectionTitle">WORKS</h2>
+              <img class="p-works__img js-showTarget is-hide__fadeIn--Left" src="assets/images/work.jpg" alt="WORKS">
+              <p class="p-works__text">DIGSMILEの制作実績を紹介します。</p>
+              <a class="p-works__button c-button u-hover__opacity" href="#">READ MORE</a>
+            </div>
+          </div>
+        </section>
+        <!-- CULTURE -->
+        <section id="culture" class="l-culture">
+          <div class="l-culture__wrapper c-sectionWidth">
+            <div class="l-culture__container">
+              <h2 class="p-culture__sectionTitle c-sectionTitle">CULTURE</h2>
+              <img class="p-culture__img js-showTarget is-hide__fadeIn--Right" src="assets/images/culture.jpg" alt="CULTURE">
+              <p class="p-culture__text">DIGSMILEの社内文化について紹介します。</p>
+              <a class="p-culture__button c-button u-hover__opacity" href="#">READ MORE</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- LATEST TOPICS -->
+    <section id="topics" class="l-topics c-sectionPading">
+      <div class="l-topics__wrapper c-sectionWidth">
+        <h2 class="p-topics__sectionTitle c-sectionTitle">LATEST TOPICS</h2>
+        <div class="p-topics__container">
+          <ul class="p-newsList">
+            <li class="p-newsList__item">
+              <p class="p-newsList__item__data">2020.02.01</p>
+              <p class="p-newsList__item__text">イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</p>
+            </li>
+            <li class="p-newsList__item">
+              <p class="p-newsList__item__data">2020.01.18</p>
+              <p class="p-newsList__item__text">プレスリリースのお知らせ DIGGIN’ RECORDS</p>
+            </li>
+            <li class="p-newsList__item">
+              <p class="p-newsList__item__data">2020.01.01</p>
+              <p class="p-newsList__item__text">新年明けましておめでとうございます</p>
+            </li>
+          </ul>
+          <a class="p-topics__button c-button u-hover__opacity" href="#">READ MORE</a>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="l-contact c-sectionPading">
+      <div class="l-contact__wrapper c-sectionWidth">
+        <div class="l-contact__container">
+          <img class="p-contact__img js-showTarget is-hide__fadeIn--Right" src="assets/images/contact.jpg" alt="CONTACT">
+          <div class="p-contact__box">
+            <h2 class="p-contact__sectionTitle c-sectionTitle">CONTACT</h2>
+            <p class="p-contact__text">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
+            <a class="p-contact__button c-button u-hover__opacity" href="#">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- フッター -->
+  <footer class="l-footer">
+    <small class="p-copyright">©2018 DIGSMILE INC.</small>
+  </footer>
+  <!-- Javascript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

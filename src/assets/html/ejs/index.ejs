@@ -1,0 +1,48 @@
+<%# ページIDを入力する %>
+<% pageId = 'home'; %>
+
+<%# グローバル変数（全部に渡す） %>
+<%
+baseUrl = json.pages[pageId].dir;
+imgUrl = baseUrl + 'assets/images/';
+%>
+
+<%# ローカル変数（一部に渡す） %>
+<%#
+const test = json.pages[pageId].dir;
+%>
+
+<%# ヘッド %>
+<%- include(json.pages[pageId].dir + '_common/_head.ejs') %>
+
+<%# ヘッダー %>
+<%- include(json.pages[pageId].dir + '_common/_header.ejs') %>
+
+<%# メイン %>
+<%- include(json.pages[pageId].dir + '_contents/_home/_cover.ejs') %>
+<%- include(json.pages[pageId].dir + '_contents/_home/_about.ejs') %>
+
+<div class="c-sectionBg c-sectionPading">
+  <div class="c-sectionBg--top"></div>
+  <div class="c-sectionFlex c-sectionWidth">
+    <%- include(json.pages[pageId].dir + '_contents/_home/_works.ejs') %>
+    <%- include(json.pages[pageId].dir + '_contents/_home/_culture.ejs') %>
+  </div>
+</div>
+
+<%- include(json.pages[pageId].dir + '_contents/_home/_topics.ejs') %>
+<%- include(json.pages[pageId].dir + '_contents/_home/_contact.ejs') %>
+
+<%# フッター %>
+<%- include(json.pages[pageId].dir + '_common/_footer.ejs') %>
+
+
+
+<%# スクリプト %>
+<%- include(json.pages[pageId].dir + '_common/_script.ejs') %>
+
+
+<%# 構文メモ用 %>
+<%# include(json.pages[pageId].dir + '_common/_footer.ejs', {
+  pageId: pageId
+}) %>

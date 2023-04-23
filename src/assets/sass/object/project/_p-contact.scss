@@ -1,0 +1,27 @@
+@use "../../global" as *;
+
+
+.p-contact {
+  &__img {
+    max-width: rem(580);
+  }
+
+  &__box {
+    @include mq(pc) {
+      max-width: rem(440);
+    }
+  }
+
+  &__text {
+    font-family: $f-family-body;
+    font-weight: $f-weigth-medium;
+    font-size: rem(16);
+    line-height: lh(16, 32);
+    color: #333;
+    margin-top: rem(30);
+  }
+
+  &__button {
+    margin-top: rem(60);
+  }
+}

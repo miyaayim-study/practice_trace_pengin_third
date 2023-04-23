@@ -1,0 +1,56 @@
+@use "../../global/" as *;
+
+
+// 透過
+.u-hover__opacity {
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+// 下線
+.u-hover__underLine--center {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: rem(2);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    transform-origin: center top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+  }
+
+  &:hover::before {
+    transform-origin: center top;
+    transform: scale(1, 1);
+  }
+}
+
+.u-hover__underLine--right {
+  position: relative;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: rem(2);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+  }
+
+  &:hover::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+  }
+}

@@ -1,0 +1,131 @@
+@use "../../global/" as *;
+
+// メニューボタン
+.p-menuButton {
+  position: fixed;
+  top: rem(24);
+  right: rem(15);
+  display: flex;
+  align-items: center;
+  column-gap: rem(7);
+  z-index: 3;
+
+  @include mq(tab) {
+    top: rem(37);
+    right: rem(30);
+  }
+
+  @include mq(pc) {
+    top: rem(36);
+    right: rem(58);
+  }
+
+  &__trigger {
+    position: relative;
+    width: rem(24);
+
+    &__bar {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: rem(2);
+      border-radius: rem(2);
+      background-color: #fff;
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); // easeOutQuint
+
+      &:nth-of-type(1) {
+        transform: translate(-50%, calc(-50% - rem(5))) rotate(0deg);
+      }
+
+      &:nth-of-type(2) {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      &:nth-of-type(3) {
+        transform: translate(-50%, calc(-50% - rem(-5))) rotate(0deg);
+      }
+    }
+  }
+
+  &__title {
+    font-family: $f-family-heading;
+    color: #fff;
+    font-size: rem(10);
+  }
+}
+
+// メニューボタンクリック時のボタン変形
+.is-open .p-menuButton__trigger__bar {
+  &:nth-of-type(1) {
+    transform: translate(-50%, -50%) rotate(-25deg);
+  }
+
+  &:nth-of-type(2) {
+    width: 0;
+  }
+
+  &:nth-of-type(3) {
+    transform: translate(-50%, -50%) rotate(25deg);
+  }
+}
+
+
+// メニューナビゲーション
+.p-menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); // easeOutExpo
+
+  &__bg {
+    width: 0;
+    height: 100%;
+    background-color: rgba(#222, 0.6);
+    transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1); // easeOutSine
+  }
+
+  &__wrap {
+    width: rem(220);
+    height: 100%;
+    background-color: rgba(#222, 0.95);
+    transition: all 1s;
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: rem(40);
+      padding-top: vh(pc, 180);
+
+      &__logo {
+        max-width: rem(42.15);
+      }
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: rem(30);
+        color: #fff;
+        font-family: $f-family-primary;
+        font-weight: $f-weigth-extraBold;
+        font-size: rem(20);
+      }
+    }
+  }
+}
+
+.is-open {
+  & .p-menu__bg {
+    width: calc(100% - rem(520));
+  }
+
+  & .p-menu__wrap {
+    width: rem(520);
+  }
+}

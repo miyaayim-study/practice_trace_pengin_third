@@ -1,0 +1,68 @@
+@use "../../global" as *;
+
+.p-carousel {
+  width: vw(sp, 287);
+  height: vh(sp, 580);
+
+
+  .swiper {
+    // スライダーの幅と高さを調整
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    // スライド要素の幅と高さを調整
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    position: relative; // beforeに指定しているabsoluteのために必要
+
+    // 画像を暗くするオーバーレイ
+    &::before {
+      content: '';
+      // ↓全体を覆うように配置
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // ↓暗いオーバーレイを半透明で配置
+      background-color: rgba(0, 0, 0, 0.34);
+    }
+  }
+
+  .slideImg--1 {
+    background-image: url("#{$img-path}cover.jpg");
+  }
+  .slideImg--2 {
+    background-image: url("#{$img-path}cover2.jpg");
+  }
+  .slideImg--3 {
+    background-image: url("#{$img-path}cover3.jpg");
+  }
+  .slideImg--4 {
+    background-image: url("#{$img-path}cover4.jpg");
+  }
+
+  // ページネーション調整 
+  .swiper-pagination-bullet {
+    width: rem(8) !important;
+    height: rem(8) !important;
+    margin: 0 rem(4) 0 rem(4) !important;
+
+    @include mq(tab) {
+      width: rem(10) !important;
+      height: rem(10) !important;
+    margin: 0 rem(5) 0 rem(5) !important;
+    }
+    @include mq(pc) {
+      width: rem(12) !important;
+      height: rem(12) !important;
+    margin: 0 rem(6) 0 rem(6) !important;
+    }
+
+    background: #333 !important;
+  }
+}
