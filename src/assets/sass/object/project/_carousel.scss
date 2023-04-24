@@ -1,9 +1,9 @@
 @use "../../global/" as *;
 
 .p-carousel {
+  position: absolute;
   width: vw(sp, 287);
   height: vh(sp, 580);
-
 
   .swiper {
     // スライダーの幅と高さを調整

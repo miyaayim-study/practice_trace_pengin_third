@@ -35,6 +35,11 @@
 @use 'object/project/_p-topics';
 @use 'object/project/_p-contact';
 
+@use 'object/project/about/_about-cover';
+@use 'object/project/about/_about-vision';
+@use 'object/project/about/_about-message';
+@use 'object/project/about/_about-company';
+
 
 //* -------------------------------------------------------
 //* Utility

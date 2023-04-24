@@ -11,9 +11,7 @@
   }
   
   &__bg {
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin-left: auto;
     width: vw(sp, 283);
     height: 100%;
     background-color: #222;
@@ -31,10 +29,7 @@
     position: absolute;
     top: vh(sp, 175);
     right: vw(sp, 20);
-    color: $color-white;
-    letter-spacing: ls(63);
     z-index: 1;
-
 
     @include mq(tab) {
       top: vh(tab, 330);
@@ -44,12 +39,17 @@
     @include mq(pc) {
       top: vh(pc, 157);
       right: vw(pc, 194);
-      letter-spacing: ls(0);
     }
 
     &__text {
       font-size: rem(16);
       line-height: 1.7;
+      letter-spacing: ls(63);
+      color: $color-white;
+
+      @include mq(pc) {
+        letter-spacing: ls(0);
+      }
 
       &.is-hide {
         opacity: 0;
@@ -63,14 +63,17 @@
       }
     }
 
-    &__name {
+    &__title {
       font-size: rem(56);
       line-height: lh(56, 53);
       margin-top: rem(28);
+      letter-spacing: ls(63);
+      color: $color-white;
 
       @include mq(pc) {
         font-size: rem(72);
         line-height: lh(72, 86);
+        letter-spacing: ls(0);
       }
       
       &.is-hide {

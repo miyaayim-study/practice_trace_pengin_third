@@ -7,11 +7,6 @@ baseUrl = json.pages[pageId].dir;
 imgUrl = baseUrl + 'assets/images/';
 %>
 
-<%# ローカル変数（一部に渡す） %>
-<%#
-const test = json.pages[pageId].dir;
-%>
-
 <%# ヘッド %>
 <%- include(json.pages[pageId].dir + '_common/_head.ejs') %>
 
@@ -20,8 +15,11 @@ const test = json.pages[pageId].dir;
 
 <%# メイン %>
 <!-- メイン -->
-<main class="l-main__about">
-
+<main class="l-main-about u-overflow--hidden">
+  <%- include(json.pages[pageId].dir + '_contents/_about/_cover.ejs') %>
+  <%- include(json.pages[pageId].dir + '_contents/_about/_vision.ejs') %>
+  <%- include(json.pages[pageId].dir + '_contents/_about/_message.ejs') %>
+  <%- include(json.pages[pageId].dir + '_contents/_about/_company.ejs') %>
 </main>
 
 <%# フッター %>
@@ -29,8 +27,3 @@ const test = json.pages[pageId].dir;
 
 <%# スクリプト %>
 <%- include(json.pages[pageId].dir + '_common/_script.ejs') %>
-
-<%# 構文メモ用 %>
-<%# include(json.pages[pageId].dir + '_common/_footer.ejs', {
-  pageId: pageId
-}) %>
