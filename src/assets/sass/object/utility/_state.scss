@@ -1,26 +1,23 @@
 @use "../../global/" as *;
 
+// .js-○○には処理内容を表す単語…スタイル調整無し
+// .is-○○には状態を表す単語…単独パーツに使用、クラス名とセットで個別にスタイル調整用
+// .u-state__…は復数パーツに使用
+
 .u-state__hide {
   opacity: 0;
 }
 
+.u-state__fade__left {
+  opacity: 0;
+  transform: translateX(-30%);
+  transition: all 2s cubic-bezier(0.23, 1, 0.32, 1); // easeOutQuint
+
+  &--run {
+    transform: translateX(0);
+  }
+}
+
 .u-state__delay--300ms {
   transition-delay: 0.3s;
-}
-
-// 'u-state__show'は優先順位を上げるために一番下に記述すること
-.u-state__show {
-  opacity: 1;
-  transform: scale(1) translate(0);
-}
-
-// メニューボタンクリック時の開閉アクション
-.u-state__close {
-  transform: translateX(100%);
-  visibility: hidden;
-}
-
-.u-state__open {
-  transform: translateX(0);
-  visibility: visible;
 }

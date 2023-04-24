@@ -36,7 +36,7 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
   \*********************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nvar menuButton = function menuButton() {\n  var button = document.querySelector('.js-menuButton');\n  var menu = document.querySelector('.js-menu');\n  button.addEventListener('click', function () {\n    button.classList.toggle('u-state__open');\n    menu.classList.toggle('u-state__open');\n  });\n  window.addEventListener('resize', function () {\n    button.classList.remove('u-state__open');\n    menu.classList.remove('u-state__open');\n  });\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (menuButton);\n\n//# sourceURL=webpack://template_project_ejs/./src/assets/js/components/_button.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nvar menuButton = function menuButton() {\n  var button = document.querySelector('.js-menuButton');\n  var menu = document.querySelector('.js-menu');\n  button.addEventListener('click', function () {\n    button.classList.toggle('is-open');\n    menu.classList.toggle('is-open');\n  });\n  window.addEventListener('resize', function () {\n    button.classList.remove('is-open');\n    menu.classList.remove('is-open');\n  });\n};\n/* harmony default export */ __webpack_exports__[\"default\"] = (menuButton);\n\n//# sourceURL=webpack://template_project_ejs/./src/assets/js/components/_button.js?");
 
 /***/ }),
 

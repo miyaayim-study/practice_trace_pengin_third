@@ -24,10 +24,14 @@
   &__img {
     max-width: rem(580);
 
-    &.u-state__hide {
+    &.is-hide {
       opacity: 0;
       transform: translateX(30%);
       transition: all 2s cubic-bezier(0.23, 1, 0.32, 1); // easeOutQuint
+    }
+    &.is-show {
+      opacity: 1;
+      transform: translate(0);
     }
   }
 

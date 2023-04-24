@@ -57,7 +57,7 @@
 }
 
 // メニューボタンクリック時のボタン変形
-.u-state__open .p-menuButton__trigger__bar {
+.is-open .p-menuButton__trigger__bar {
   &:nth-of-type(1) {
     transform: translate(-50%, -50%) rotate(-25deg);
   }
@@ -80,7 +80,16 @@
   display: flex;
   justify-content: flex-end;
   z-index: 2;
-  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); // easeOutExpo
+
+  &.is-close {
+    transform: translateX(100%);
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); // easeOutExpo
+    visibility: hidden;
+  }
+  &.is-open {
+    transform: translateX(0);
+    visibility: visible;
+  }
 
   &__bg {
     width: 0;
@@ -120,7 +129,7 @@
   }
 }
 
-.u-state__open {
+.is-open {
   & .p-menu__bg {
     width: calc(100% - rem(520));
   }

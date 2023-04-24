@@ -2,12 +2,12 @@ const menuButton = () => {
   const button = document.querySelector('.js-menuButton');
   const menu = document.querySelector('.js-menu');
   button.addEventListener('click', () => {
-    button.classList.toggle('u-state__open');
-    menu.classList.toggle('u-state__open');
+    button.classList.toggle('is-open');
+    menu.classList.toggle('is-open');
   });
   window.addEventListener('resize', () => {
-    button.classList.remove('u-state__open');
-    menu.classList.remove('u-state__open');
+    button.classList.remove('is-open');
+    menu.classList.remove('is-open');
   });
 };
 

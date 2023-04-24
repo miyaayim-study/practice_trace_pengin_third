@@ -27,7 +27,7 @@ const watchFiles = (done) => { // "watchFiles"というgulpタスクを定義、
   gulp.watch(dir.src.ejs + "**/*.ejs", html); // htmlファイルの監視 ＆ HTML構文チェック & HTML複製
   gulp.watch(dir.src.stylesheets + "**/*.scss", compileSass); // scssファイルの監視 ＆ sassコンパイル & ベンダープレフィックス付与 & 構文チェック & プロパティ順序修正
   gulp.watch(dir.src.javascripts + "**/*.js", bundleWebpack); // jsxファイルの監視 ＆ webpackバンドル & 構文チェック
-  gulp.watch([dir.dist.html + "*.html", dir.dist.stylesheets + "*.css", dir.dist.javascripts + "*.js"], reload); // ファイルに変更があれば同期しているブラウザをリロード
+  gulp.watch([dir.dist.html + "**/*.html", dir.dist.stylesheets + "**/*.css", dir.dist.javascripts + "**/*.js"], reload); // ファイルに変更があれば同期しているブラウザをリロード
 
   done(); //done()でタスク完了の信号を出す
 };

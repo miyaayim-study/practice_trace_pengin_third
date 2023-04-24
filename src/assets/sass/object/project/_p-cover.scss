@@ -51,11 +51,15 @@
       font-size: rem(16);
       line-height: 1.7;
 
-      &.u-state__hide {
+      &.is-hide {
         opacity: 0;
         transform: translateY(-40%);
-        transition: all 2s;
+        transition: all 2s cubic-bezier(0.23, 1, 0.32, 1); // easeOutQuint
         transition-delay: 0.3s;
+      }
+      &.is-show {
+        opacity: 1;
+        transform: translate(0);
       }
     }
 
@@ -69,10 +73,14 @@
         line-height: lh(72, 86);
       }
       
-      &.u-state__hide {
+      &.is-hide {
         opacity: 0;
         transform: translateX(30%);
         transition: all 2s cubic-bezier(0.23, 1, 0.32, 1); // easeOutQuint
+      }
+      &.is-show {
+        opacity: 1;
+        transform: translate(0);
       }
     }
   }
@@ -94,7 +102,7 @@
       content: "";
       position: absolute;
       height: rem(1);
-      width: rem(120);
+      width: calc(20vh - 2rem);
       background-color: #000;
       top: 50%;
       margin-left: rem(8);
