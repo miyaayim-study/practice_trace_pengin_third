@@ -1,6 +1,8 @@
 @use "../../global/" as *;
 
 .p-about {
+  margin-top: rem(80);
+  
   &__wrapper {
     padding-top: rem(50);
     padding-bottom: rem(50);

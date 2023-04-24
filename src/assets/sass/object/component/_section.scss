@@ -17,6 +17,11 @@
 .c-sectionPading {
   padding-left: rem(15);
   padding-right: rem(15);
+
+  @include mq(tab) {
+    padding-left: rem(30);
+    padding-right: rem(30);
+  }
 }
 
 .c-sectionTitle {

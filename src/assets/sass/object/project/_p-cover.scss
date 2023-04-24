@@ -1,7 +1,7 @@
 @use "../../global/" as *;
 
 .p-cover {
-  height: calc(100vh + rem(80));
+  height: 100vh;
   background-color: #fff;
 
   &__wrapper {

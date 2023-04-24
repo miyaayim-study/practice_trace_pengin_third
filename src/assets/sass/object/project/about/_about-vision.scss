@@ -1,0 +1,57 @@
+@use "../../../global/" as *;
+
+.p-vision {
+    margin-top: rem(80);
+
+    @include mq(pc) {
+      margin-top: rem(120);
+    }
+
+  &__container {
+    max-width: rem(415);
+    margin: auto;
+  }
+
+  &__sectionTitle {
+    font-size: rem(32);
+  }
+
+  &__headText {
+    font-family: $f-family-NotoSans;
+    font-weight: $f-weigth-bold;
+    font-size: rem(24);
+    margin-top: rem(30);
+
+    @include mq(tab) {
+      margin-top: rem(23);
+      letter-spacing: ls(5);
+    }
+    @include mq(pc) {
+      margin-top: rem(25);
+    }
+  }
+
+  &__box {
+    margin: rem(30) auto 0;
+    
+    @include mq(pc) {
+      margin-top: rem(27);
+    }
+
+    &__text {
+      font-family: $f-family-NotoSans;
+      font-weight: $f-weigth-bold;
+      font-size: rem(14);
+      line-height: lh(14, 28);
+
+      @include mq(pc) {
+        font-size: rem(16);
+        line-height: lh(16, 32);
+      }
+
+      & + p {
+        margin-top: rem(40);
+      }
+    }
+  }
+}

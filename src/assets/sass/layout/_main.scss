@@ -1,1 +1,9 @@
 @use "../global/" as *;
+
+.l-main-about {
+  padding-bottom: rem(80);
+
+  @include mq(pc) {
+    padding-bottom: rem(120);
+  }
+}
