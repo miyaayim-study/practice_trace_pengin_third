@@ -1,0 +1,100 @@
+@use "../../../global/" as *;
+
+.p-cover {
+  height: 100vh;
+  background-color: #fff;
+
+  &__wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  &__bg {
+    margin-left: auto;
+    width: vw(sp, 283);
+    height: 100%;
+    background-color: #222;
+
+    @include mq(tab) {
+      width: vw(tab, 562);
+    }
+
+    @include mq(pc) {
+      width: vw(pc, 780);
+    }
+  }
+
+  &__catch {
+    position: absolute;
+    top: vh(sp, 175);
+    right: vw(sp, 20);
+    z-index: 1;
+
+    @include mq(tab) {
+      top: vh(tab, 330);
+      right: vw(tab, 80);
+    }
+
+    @include mq(pc) {
+      top: vh(pc, 157);
+      right: vw(pc, 194);
+    }
+
+    &__text {
+      display: block;
+      font-size: rem(16);
+      line-height: 1.7;
+      letter-spacing: ls(63);
+      color: $color-white;
+
+      @include mq(pc) {
+        letter-spacing: ls(0);
+      }
+    }
+
+    &__title {
+      display: block;
+      font-size: rem(56);
+      line-height: lh(56, 53);
+      margin-top: rem(28);
+      letter-spacing: ls(63);
+      color: $color-white;
+
+      @include mq(pc) {
+        font-size: rem(72);
+        line-height: lh(72, 86);
+        letter-spacing: ls(0);
+      }
+    }
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: rem(20);
+    left: vw(sp, 0);
+    font-family: $f-family-primary;
+    font-weight: $f-weight-extraBold;
+    font-size: rem(12);
+    color: #000;
+    transform: rotate(-90deg);
+    z-index: 1;
+    mix-blend-mode: difference;
+    filter: invert(100%);
+
+    @include mq(pc) {
+      left: vw(pc, 42);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: rem(1);
+      width: calc(20vh - 2rem);
+      background-color: #000;
+      top: 50%;
+      margin-left: rem(8);
+      transform: translateY(-50%);
+    }
+  }
+}

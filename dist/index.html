@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <!-- リセットCSS -->
-  <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css"> -->
   <!-- CSS-->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -19,40 +19,46 @@
   <!-- ヘッダー -->
   <header class="l-header">
     <!-- ヘッダーロゴ -->
-    <a href="#" class="l-header__logo">
-      <img src="assets/images/header_logo.svg" alt="DIGSMAILE INC.">
-    </a>
+    <div class="l-header__logo">
+      <a href="#">
+        <img src="assets/images/common/header_logo.svg" alt="DIGSMAILE INC.">
+      </a>
+    </div>
     <!-- メニューボタン -->
-    <button type="button" class="p-menuButton js-menuButton">
-      <div class="p-menuButton__trigger">
+    <div class="p-menuButton u-pointer js-menuButton">
+      <button type="button" class="p-menuButton__trigger">
         <span class="p-menuButton__trigger__bar"></span>
         <span class="p-menuButton__trigger__bar"></span>
         <span class="p-menuButton__trigger__bar"></span>
-      </div>
+      </button>
       <span class="p-menuButton__title">MENU</span>
-    </button>
+    </div>
     <!-- メニューナビゲーション -->
     <div class="p-menu is-close js-menu">
       <div class="p-menu__bg"></div>
       <div class="p-menu__wrap">
         <nav class="p-menu__wrap__nav">
-          <a href="#"><img class="p-menu__wrap__nav__logo" src="assets/images/menu_logo.png" alt="DIGSMAILE INC."></a>
+          <div class="p-menu__wrap__nav__logo">
+            <a href="#">
+              <img src="assets/images/common/menu_logo.png" alt="DIGSMAILE INC.">
+            </a>
+          </div>
           <ul class="p-menu__wrap__nav__list">
-            <li class="u-hover__underLine--center"><a href="about/">
-                <p>ABOUT US</p>
-              </a></li>
-            <li class="u-hover__underLine--center"><a href="#works">
-                <p>WORKS</p>
-              </a></li>
-            <li class="u-hover__underLine--center"><a href="#culture">
-                <p>CULTURE</p>
-              </a></li>
-            <li class="u-hover__underLine--center"><a href="#topics">
-                <p>TOPICS</p>
-              </a></li>
-            <li class="u-hover__underLine--center"><a href="contact/">
-                <p>CONTACT</p>
-              </a></li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="about/">ABOUT US</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="#works">WORKS</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="#culture">CULTURE</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="#topics">TOPICS</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="contact/">CONTACT</a></p>
+            </li>
           </ul>
         </nav>
       </div>
@@ -70,10 +76,10 @@
             <!-- スライド要素を包む要素 -->
             <div class="swiper-wrapper">
               <!-- 各スライド -->
-              <div class="swiper-slide slideImg--1"></div>
-              <div class="swiper-slide slideImg--2"></div>
-              <div class="swiper-slide slideImg--3"></div>
-              <div class="swiper-slide slideImg--4"></div>
+              <div class="swiper-slide slideImg--1 c-musk__black"></div>
+              <div class="swiper-slide slideImg--2 c-musk__black"></div>
+              <div class="swiper-slide slideImg--3 c-musk__black"></div>
+              <div class="swiper-slide slideImg--4 c-musk__black"></div>
             </div>
             <!-- ページネーション -->
             <div class="swiper-pagination"></div>
@@ -81,20 +87,20 @@
         </div>
         <div class="p-cover__bg"></div>
         <h1 class="p-cover__catch">
-          <p class="p-cover__catch__text u-font--body u-bold js-showTarget is-hide">デザインで人を笑顔にする会社</p>
-          <p class="p-cover__catch__text u-font--heading u-bold js-showTarget is-hide">DIGSMILE INC.</p>
-          <p class="p-cover__catch__title js-showTarget is-hide">DESIGN<br>FOR<br>SMILE.</p>
+          <span class="p-cover__catch__text u-font--body u-bold u-fadeIn__top u-delay--300ms js-showTarget">デザインで人を笑顔にする会社</span>
+          <span class="p-cover__catch__text u-font--heading u-bold u-fadeIn__top u-delay--300ms js-showTarget">DIGSMILE INC.</span>
+          <span class="p-cover__catch__title u-fadeIn__right js-showTarget">DESIGN<br>FOR<br>SMILE.</span>
         </h1>
         <p class="p-cover__scroll">SCROLL</p>
       </div>
     </section>
     <!-- ABOUT US -->
     <section id="about" class="p-about">
-      <div class="p-about__wrapper c-sectionPading c-sectionWidth">
-        <div class="p-about__wrapper__container js-showTarget is-hide">
+      <div class="p-about__wrapper c-sectionPading c-sectionWidth c-musk__black">
+        <div class="p-about__wrapper__container u-fadeIn__center js-showTarget">
           <h2 class="p-about__sectionTitle c-sectionTitle">ABOUT US</h2>
           <p class="p-about__text">DIGSMILEは、デザインで人を笑顔にする会社。<br>なんでもない日常に少しのワクワクと遊び心を提供します。笑顔には世界を変える力がある、デザインには人を幸せにする力がある。毎日に幸せを感じて生きていきたい。<br>DIGSMILEの社名にはそんな想いが込められています。</p>
-          <p class="p-about__button c-button"><a class="u-hover__opacity" href="#">READ MORE</a></p>
+          <p class="p-about__button c-button"><a href="/about">READ MORE</a></p>
         </div>
       </div>
     </section>
@@ -104,11 +110,13 @@
         <!-- WORKS -->
         <section id="works" class="p-works">
           <div class="p-works__wrapper c-sectionWidth">
-            <div class="p-works__container">
-              <h2 class="p-works__sectionTitle c-sectionTitle">WORKS</h2>
-              <img class="p-works__img js-showTarget is-hide" src="assets/images/work.jpg" alt="WORKS">
-              <p class="p-works__text">DIGSMILEの制作実績を紹介します。</p>
-              <p class="p-works__button c-button"><a class="u-hover__opacity" href="#">READ MORE</a></p>
+            <div class="p-works__container u-fadeIn__right--mqPcLeft js-showTarget">
+              <h2 class="p-works__sectionTitle c-sectionTitle u-fadeIn__right--mqPcLeft js-showTarget">WORKS</h2>
+              <div class="p-works__img c-musk__black u-fadeIn__right--mqPcLeft js-showTarget">
+                <img src="assets/images//top/works@2x.jpg" alt="WORKS">
+              </div>
+              <p class="p-works__text u-fadeIn__right--mqPcLeft js-showTarget">DIGSMILEの制作実績を紹介します。</p>
+              <p class="p-works__button c-button u-fadeIn__right--mqPcLeft js-showTarget"><a class="u-hover__opacity" href="#">READ MORE</a></p>
             </div>
           </div>
         </section>
@@ -116,10 +124,12 @@
         <section id="culture" class="p-culture">
           <div class="p-culture__wrapper c-sectionWidth">
             <div class="p-culture__container">
-              <h2 class="p-culture__sectionTitle c-sectionTitle">CULTURE</h2>
-              <img class="p-culture__img js-showTarget is-hide" src="assets/images/culture.jpg" alt="CULTURE">
-              <p class="p-culture__text">DIGSMILEの社内文化について紹介します。</p>
-              <p class="p-culture__button c-button"><a class="u-hover__opacity" href="#">READ MORE</a></p>
+              <h2 class="p-culture__sectionTitle c-sectionTitle u-fadeIn__right js-showTarget">CULTURE</h2>
+              <div class="p-culture__img c-musk__black u-fadeIn__right js-showTarget">
+                <img src="assets/images//top/culture@2x.jpg" alt="CULTURE">
+              </div>
+              <p class="p-culture__text u-fadeIn__right js-showTarget">DIGSMILEの社内文化について紹介します。</p>
+              <p class="p-culture__button c-button u-fadeIn__right js-showTarget"><a class="u-hover__opacity" href="#">READ MORE</a></p>
             </div>
           </div>
         </section>
@@ -128,23 +138,29 @@
     <!-- LATEST TOPICS -->
     <section id="topics" class="p-topics c-sectionPading">
       <div class="p-topics__wrapper c-sectionWidth">
-        <h2 class="p-topics__sectionTitle c-sectionTitle">LATEST TOPICS</h2>
+        <h2 class="p-topics__sectionTitle c-sectionTitle u-fadeIn__right js-showTarget">LATEST TOPICS</h2>
         <div class="p-topics__container">
           <ul class="p-newsList">
-            <li class="p-newsList__item">
-              <p class="p-newsList__item__data">2020.02.01</p>
-              <p class="p-newsList__item__text">イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</p>
+            <li class="p-newsList__item u-fadeIn__right js-showTarget">
+              <a href="#">
+                <p class="p-newsList__item__data">2020.02.01</p>
+                <p class="p-newsList__item__text">イベントレポート「VRクリエイター座談会 〜5Gの次に来るもの〜」</p>
+              </a>
             </li>
-            <li class="p-newsList__item">
-              <p class="p-newsList__item__data">2020.01.18</p>
-              <p class="p-newsList__item__text">プレスリリースのお知らせ DIGGIN’ RECORDS</p>
+            <li class="p-newsList__item u-fadeIn__right js-showTarget">
+              <a href="#">
+                <p class="p-newsList__item__data">2020.01.18</p>
+                <p class="p-newsList__item__text">プレスリリースのお知らせ DIGGIN’ RECORDS</p>
+              </a>
             </li>
-            <li class="p-newsList__item">
-              <p class="p-newsList__item__data">2020.01.01</p>
-              <p class="p-newsList__item__text">新年明けましておめでとうございます</p>
+            <li class="p-newsList__item u-fadeIn__right js-showTarget">
+              <a href="#">
+                <p class="p-newsList__item__data">2020.01.01</p>
+                <p class="p-newsList__item__text">新年明けましておめでとうございます</p>
+              </a>
             </li>
           </ul>
-          <p class="p-topics__button c-button"><a class="u-hover__opacity" href="#">READ MORE</a></p>
+          <p class="p-topics__button c-button u-fadeIn__right js-showTarget"><a class="u-hover__opacity" href="#">READ MORE</a></p>
         </div>
       </div>
     </section>
@@ -152,11 +168,13 @@
     <section id="contact" class="p-contact c-sectionPading">
       <div class="p-contact__wrapper c-sectionWidth">
         <div class="p-contact__container">
-          <img class="p-contact__img js-showTarget is-hide" src="assets/images/contact.jpg" alt="CONTACT">
+          <div class="p-contact__img c-musk__black u-fadeIn__right js-showTarget">
+            <img src="assets/images//top/contact@2x.jpg" alt="CONTACT">
+          </div>
           <div class="p-contact__box">
-            <h2 class="p-contact__sectionTitle c-sectionTitle">CONTACT</h2>
-            <p class="p-contact__text">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
-            <p class="p-contact__button c-button"><a class="u-hover__opacity" href="#">READ MORE</a></p>
+            <h2 class="p-contact__sectionTitle c-sectionTitle u-fadeIn__right--mqPcLeft js-showTarget">CONTACT</h2>
+            <p class="p-contact__text u-fadeIn__right--mqPcLeft js-showTarget">制作の依頼、取材の依頼、IRや採用についての連絡・お問い合わせはコンタクトページから承っております。<br>まずはお気軽にご連絡ください。担当者から改めて返信いたします。</p>
+            <p class="p-contact__button c-button u-fadeIn__right--mqPcLeft js-showTarget"><a class="u-hover__opacity" href="/contact">READ MORE</a></p>
           </div>
         </div>
       </div>

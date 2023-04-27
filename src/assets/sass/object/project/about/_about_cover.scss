@@ -1,0 +1,104 @@
+@use "../../../global/" as *;
+
+.p-about-cover {
+  width: 100%;
+  background-color: #fff;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    width: vw(sp, 287);
+    height: rem(387);
+    position: absolute;
+    background-image: url("#{$img-path}about/about_cover.jpg");
+    background-position: 54% top;
+    background-size: auto 180%;
+
+    &.c-musk__black::before {
+      background-color: rgba(0, 0, 0, 0.34);
+    }
+
+    @include mq(tab) {
+      width: vw(tab, 587);
+      height: rem(529);
+      background-position: 48% 5%;
+      background-size: auto 150;
+    }
+
+    @include mq(pc) {
+      width: vw(pc, 1100);
+      height: rem(387);
+      background-position: center 10%;
+      background-size: cover;
+    }
+  }
+
+  &__bg {
+    width: vw(sp, 198);
+    height: rem(449);
+    margin-left: auto;
+    background-color: #222;
+
+    @include mq(tab) {
+      width: vw(tab, 406);
+      height: rem(615);
+    }
+
+    @include mq(pc) {
+      width: vw(pc, 780);
+      height: rem(464);
+    }
+  }
+
+
+  &__catch {
+    position: absolute;
+    top: rem(150);
+    right: vw(sp, 30);
+    z-index: 1;
+
+    @include mq(tab) {
+      top: rem(220);
+      right: vw(tab, 100);
+    }
+
+    @include mq(pc) {
+      top: rem(156);
+      right: vw(pc, 170);
+    }
+
+    
+    &__title {
+      display: block;
+      font-size: rem(52);
+      line-height: lh(72, 86);
+      font-family: $f-family-Montserrat;
+      font-weight: $f-weight-extraBold;
+      color: $color-white;
+
+      @include mq(tab) {
+        letter-spacing: ls(63);
+      }
+
+      @include mq(pc) {
+        font-size: rem(72);
+      }
+    }
+
+    &__text {
+      display: block;
+      font-size: rem(16);
+      font-family: $f-family-NotoSans;
+      font-weight: $f-weight-bold;
+      color: $color-white;
+      margin-top: rem(5);
+
+      @include mq(tab) {
+        letter-spacing: ls(5);
+      }
+    }
+  }
+}

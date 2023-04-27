@@ -1,0 +1,132 @@
+@use "../../../global/" as *;
+
+.p-contact-cover {
+  width: 100%;
+  background-color: #fff;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    width: vw(sp, 287);
+    height: rem(270);
+    position: absolute;
+    background-image: url("#{$img-path}/contact/contact_cover.jpg");
+    background-position: 85% 40%;
+    background-size: cover;
+    z-index: 1;
+
+    &.c-musk__black::before {
+      background-color: rgba(0, 0, 0, 0.34);
+    }
+
+    @include mq(tab) {
+      width: vw(tab, 578);
+      height: rem(529);
+      background-position: 44% 42%;
+      background-size: auto 190%;
+    }
+
+    @include mq(pc) {
+      width: vw(pc, 1100);
+      height: rem(387);
+      background-position: center 45%;
+      background-size: cover;
+    }
+  }
+
+  &__bg {
+    width: vw(sp, 198);
+    height: rem(365);
+    margin-left: auto;
+    background-color: #222;
+
+    @include mq(tab) {
+      width: vw(tab, 406);
+      height: rem(615);
+    }
+
+    @include mq(pc) {
+      width: vw(pc, 780);
+      height: rem(451);
+    }
+  }
+
+
+  &__catch {
+    position: absolute;
+    top: rem(129);
+    right: vw(sp, 21);
+    z-index: 1;
+
+    @include mq(tab) {
+      top: rem(132);
+      right: vw(tab, 50);
+    }
+
+    @include mq(pc) {
+      top: rem(156);
+      right: vw(pc, 150);
+    }
+
+
+    &__title {
+      display: block;
+      font-size: rem(52);
+      line-height: lh(72, 86);
+      letter-spacing: ls(63);
+      font-family: $f-family-Montserrat;
+      font-weight: $f-weight-extraBold;
+      color: $color-white;
+
+      @include mq(pc) {
+        font-size: rem(72);
+      }
+    }
+
+    &__text {
+      display: block;
+      font-size: rem(16);
+      font-family: $f-family-YuGothic;
+      font-weight: $f-weight-bold;
+      color: $color-white;
+      margin-top: rem(5);
+      text-align: right;
+
+      @include mq(tab) {
+        letter-spacing: ls(5);
+        text-align: left;
+      }
+    }
+  }
+  &__scroll {
+    position: absolute;
+    bottom: rem(20);
+    left: 0;
+    font-family: $f-family-primary;
+    font-weight: $f-weight-extraBold;
+    font-size: rem(12);
+    color: #000;
+    transform: rotate(-90deg);
+    z-index: 1;
+    mix-blend-mode: difference;
+    filter: invert(100%);
+
+    @include mq(tab) {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: rem(1);
+      width: rem(110);
+      background-color: #000;
+      top: 50%;
+      margin-left: rem(8);
+      transform: translateY(-50%);
+    }
+  }
+}

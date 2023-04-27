@@ -5,8 +5,10 @@
 ];
 newsLists.forEach((value) => {
 %>
-  <li class="p-newsList__item">
-    <p class="p-newsList__item__data"><%= value.data %></p>
-    <p class="p-newsList__item__text"><%= value.text %></p>
+  <li class="p-newsList__item u-fadeIn__right js-showTarget">
+    <a href="#">
+      <p class="p-newsList__item__data"><%= value.data %></p>
+      <p class="p-newsList__item__text"><%= value.text %></p>
+    </a>
   </li>
 <% }); %>

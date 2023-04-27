@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <!-- リセットCSS -->
-  <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css"> -->
   <!-- CSS-->
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -19,40 +19,46 @@
   <!-- ヘッダー -->
   <header class="l-header">
     <!-- ヘッダーロゴ -->
-    <a href="../" class="l-header__logo">
-      <img src="../assets/images/header_logo.svg" alt="DIGSMAILE INC.">
-    </a>
+    <div class="l-header__logo">
+      <a href="../">
+        <img src="../assets/images/common/header_logo.svg" alt="DIGSMAILE INC.">
+      </a>
+    </div>
     <!-- メニューボタン -->
-    <button type="button" class="p-menuButton js-menuButton">
-      <div class="p-menuButton__trigger">
+    <div class="p-menuButton u-pointer js-menuButton">
+      <button type="button" class="p-menuButton__trigger">
         <span class="p-menuButton__trigger__bar"></span>
         <span class="p-menuButton__trigger__bar"></span>
         <span class="p-menuButton__trigger__bar"></span>
-      </div>
+      </button>
       <span class="p-menuButton__title">MENU</span>
-    </button>
+    </div>
     <!-- メニューナビゲーション -->
     <div class="p-menu is-close js-menu">
       <div class="p-menu__bg"></div>
       <div class="p-menu__wrap">
         <nav class="p-menu__wrap__nav">
-          <a href="../"><img class="p-menu__wrap__nav__logo" src="../assets/images/menu_logo.png" alt="DIGSMAILE INC."></a>
+          <div class="p-menu__wrap__nav__logo">
+            <a href="../">
+              <img src="../assets/images/common/menu_logo.png" alt="DIGSMAILE INC.">
+            </a>
+          </div>
           <ul class="p-menu__wrap__nav__list">
-            <li class="u-hover__underLine--center"><a href="#">
-                <p>ABOUT US</p>
-              </a></li>
-            <li class="u-hover__underLine--center"><a href="../#works">
-                <p>WORKS</p>
-              </a></li>
-            <li class="u-hover__underLine--center"><a href="../#culture">
-                <p>CULTURE</p>
-              </a></li>
-            <li class="u-hover__underLine--center"><a href="../#topics">
-                <p>TOPICS</p>
-              </a></li>
-            <li class="u-hover__underLine--center"><a href="../contact/">
-                <p>CONTACT</p>
-              </a></li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="#">ABOUT US</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="../#works">WORKS</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="../#culture">CULTURE</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="../#topics">TOPICS</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="../contact/">CONTACT</a></p>
+            </li>
           </ul>
         </nav>
       </div>
@@ -63,35 +69,37 @@
     <!-- カバー -->
     <section class="p-about-cover">
       <div class="p-about-cover__wrapper">
-        <div class="p-about-cover__img"></div>
+        <div class="p-about-cover__img c-musk__black"></div>
         <div class="p-about-cover__bg"></div>
         <h1 class="p-about-cover__catch">
-          <p class="p-about-cover__catch__title js-showTarget is-hide">ABOUT US</p>
-          <p class="p-about-cover__catch__text js-showTarget is-hide">DIGSMILEについて</p>
+          <span class="p-about-cover__catch__title u-fadeIn__right js-showTarget">ABOUT US</span>
+          <span class="p-about-cover__catch__text u-fadeIn__bottom u-delay--300ms js-showTarget">DIGSMILEについて</span>
         </h1>
       </div>
     </section>
     <section class="p-vision c-sectionPading">
       <div class="p-vision__wrapper c-sectionWidth">
         <div class="p-vision__container">
-          <h2 class="p-vision__sectionTitle c-sectionTitle">VISION</h2>
-          <h3 class="p-vision__headText">デザインで人を笑顔にする会社</h3>
+          <h2 class="p-vision__sectionTitle c-sectionTitle u-fadeIn__right js-showTarget">VISION</h2>
+          <h3 class="p-vision__headText u-fadeIn__right js-showTarget">デザインで人を笑顔にする会社</h3>
           <div class="p-vision__box">
-            <p class="p-vision__box__text">私達のデザインで人が笑顔になる。</p>
-            <p class="p-vision__box__text">そんなデザインを目指しています。</p>
-            <p class="p-vision__box__text">私達が考える人を笑顔にできるデザインとは、<br>デザインが課題を適切に解決ができているかどうか。</p>
-            <p class="p-vision__box__text">ビジュアルだけではなく、<br>本当に求められているものは何かを考え抜いて、<br>デザインしていきたい。</p>
-            <p class="p-vision__box__text">誰かの幸せを創ることも、<br>世界の常識を変えていくことだってできる。</p>
-            <p class="p-vision__box__text">私達はデザインの力を信じています。</p>
+            <p class="p-vision__box__text u-fadeIn__right js-showTarget">私達のデザインで人が笑顔になる。</p>
+            <p class="p-vision__box__text u-fadeIn__right js-showTarget">そんなデザインを目指しています。</p>
+            <p class="p-vision__box__text u-fadeIn__right js-showTarget">私達が考える人を笑顔にできるデザインとは、<br>デザインが課題を適切に解決ができているかどうか。</p>
+            <p class="p-vision__box__text u-fadeIn__right js-showTarget">ビジュアルだけではなく、<br>本当に求められているものは何かを考え抜いて、<br>デザインしていきたい。</p>
+            <p class="p-vision__box__text u-fadeIn__right js-showTarget">誰かの幸せを創ることも、<br>世界の常識を変えていくことだってできる。</p>
+            <p class="p-vision__box__text u-fadeIn__right js-showTarget">私達はデザインの力を信じています。</p>
           </div>
         </div>
       </div>
     </section>
     <section class="p-message">
-      <div class="p-message__wrapper c-sectionWidth">
-        <img class="p-message__img" src="../assets/images/ceo.jpg" alt="CEO MESSAGE">
+      <div class="p-message__wrapper">
+        <div class="p-message__img c-musk__black u-fadeIn__right js-showTarget">
+          <img src="../assets/images//about/message@2x.jpg" alt="CEO MESSAGE">
+        </div>
         <div class="p-message__inner c-sectionPading">
-          <div class="p-message__container">
+          <div class="p-message__container u-fadeIn__left js-showTarget">
             <h2 class="p-message__sectionTitle c-sectionTitle">CEO MESSAGE</h2>
             <div class="p-message__box">
               <p class="p-message__box__text">良いデザインは人を幸せにする。</p>
@@ -108,35 +116,35 @@
     <section class="p-company c-sectionPading ">
       <div class="p-company__wrapper c-sectionWidth">
         <div class="p-company__container">
-          <h2 class="p-company__sectionTitle c-sectionTitle">COMPANY</h2>
+          <h2 class="p-company__sectionTitle c-sectionTitle u-fadeIn__right js-showTarget">COMPANY</h2>
           <table class="p-company__info">
-            <tr class="p-company__info__tr">
-              <th class="p-company__info__th">社名</th>
-              <td class="p-company__info__td">株式会社DIGSMILE</td>
+            <tr class="u-fadeIn__right js-showTarget">
+              <th>社名</th>
+              <td>株式会社DIGSMILE</td>
             </tr>
-            <tr class="p-company__info__tr">
-              <th class="p-company__info__th">代表取締役</th>
-              <td class="p-company__info__td">テイラー・スウィフト</td>
+            <tr class="u-fadeIn__right js-showTarget">
+              <th>代表取締役</th>
+              <td>テイラー・スウィフト</td>
             </tr>
-            <tr class="p-company__info__tr">
-              <th class="p-company__info__th">設立</th>
-              <td class="p-company__info__td">2020年1月1日</td>
+            <tr class="u-fadeIn__right js-showTarget">
+              <th>設立</th>
+              <td>2020年1月1日</td>
             </tr>
-            <tr class="p-company__info__tr">
-              <th class="p-company__info__th">資本金</th>
-              <td class="p-company__info__td">1億円</td>
+            <tr class="u-fadeIn__right js-showTarget">
+              <th>資本金</th>
+              <td>1億円</td>
             </tr>
-            <tr class="p-company__info__tr">
-              <th class="p-company__info__th">所在地</th>
-              <td class="p-company__info__td">東京都新宿区☓☓0-0-0</td>
+            <tr class="u-fadeIn__right js-showTarget">
+              <th>所在地</th>
+              <td>東京都新宿区☓☓0-0-0</td>
             </tr>
-            <tr class="p-company__info__tr">
-              <th class="p-company__info__th">電話番号</th>
-              <td class="p-company__info__td">03-0000-00000</td>
+            <tr class="u-fadeIn__right js-showTarget">
+              <th>電話番号</th>
+              <td>03-0000-00000</td>
             </tr>
           </table>
         </div>
-        <div class="p-company__map">
+        <div class="p-company__map u-fadeIn__right js-showTarget">
           <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d12961.952053542942!2d139.7005713!3d35.6896067!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1682344412171!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>

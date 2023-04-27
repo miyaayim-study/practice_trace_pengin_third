@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>contactDESIGN FOR SMILE.</title>
+  <meta name="description" content="お問い合わせ">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <!-- リセットCSS -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css"> -->
+  <!-- CSS-->
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <!-- ヘッダー -->
+  <header class="l-header">
+    <!-- ヘッダーロゴ -->
+    <div class="l-header__logo">
+      <a href="../">
+        <img src="../assets/images/common/header_logo.svg" alt="DIGSMAILE INC.">
+      </a>
+    </div>
+    <!-- メニューボタン -->
+    <div class="p-menuButton u-pointer js-menuButton">
+      <button type="button" class="p-menuButton__trigger">
+        <span class="p-menuButton__trigger__bar"></span>
+        <span class="p-menuButton__trigger__bar"></span>
+        <span class="p-menuButton__trigger__bar"></span>
+      </button>
+      <span class="p-menuButton__title">MENU</span>
+    </div>
+    <!-- メニューナビゲーション -->
+    <div class="p-menu is-close js-menu">
+      <div class="p-menu__bg"></div>
+      <div class="p-menu__wrap">
+        <nav class="p-menu__wrap__nav">
+          <div class="p-menu__wrap__nav__logo">
+            <a href="../">
+              <img src="../assets/images/common/menu_logo.png" alt="DIGSMAILE INC.">
+            </a>
+          </div>
+          <ul class="p-menu__wrap__nav__list">
+            <li>
+              <p class="c-hover__underLine--center"><a href="../about/">ABOUT US</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="../#works">WORKS</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="../#culture">CULTURE</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="../#topics">TOPICS</a></p>
+            </li>
+            <li>
+              <p class="c-hover__underLine--center"><a href="#">CONTACT</a></p>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- メイン -->
+  <main class="l-main-contact u-overflow--hidden">
+    <!-- カバー -->
+    <section class="p-contact-cover">
+      <div class="p-contact-cover__wrapper">
+        <div class="p-contact-cover__img c-musk__black"></div>
+        <div class="p-contact-cover__bg"></div>
+        <h1 class="p-contact-cover__catch">
+          <span class="p-contact-cover__catch__title u-fadeIn__right js-showTarget">CONTACT</span>
+          <span class="p-contact-cover__catch__text u-fadeIn__bottom u-delay--300ms js-showTarget">お問い合わせ</span>
+        </h1>
+        <p class="p-contact-cover__scroll">SCROLL</p>
+      </div>
+    </section>
+    <section class="p-form c-sectionPading">
+      <div class="p-form__wrapper c-sectionWidth">
+        <div class="p-form__container">
+          <p class="p-form__headMessage">ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。</p>
+          <form class="p-form__formArea" action="送信先のURL">
+            <!-- お問い合わせ種別 -->
+            <dl class="p-form__formArea__kinds">
+              <dt>
+                <span>お問い合わせ種別</span>
+                <span class="p-form__formArea__required">必須</span>
+              </dt>
+              <dd class="p-form__formArea__kinds__radio">
+                <div>
+                  <input type="radio" id="request" name="kinds" value="request" required>
+                  <label for="request">制作依頼</label>
+                </div>
+                <div>
+                  <input type="radio" id="adoption" name="kinds" value="adoption" required>
+                  <label for="adoption">採用</label>
+                </div>
+                <div>
+                  <input type="radio" id="ir" name="kinds" value="ir" required>
+                  <label for="ir">IR</label>
+                </div>
+                <div>
+                  <input type="radio" id="others" name="kinds" value="others" required>
+                  <label for="others">その他</label>
+                </div>
+              </dd>
+            </dl>
+            <!-- 会社名・団体名 -->
+            <dl class="p-form__formArea__companyName">
+              <dt>
+                <label for="companyName">会社名・団体名</label>
+              </dt>
+              <dd>
+                <input type="text" id="companyName" name="companyName">
+              </dd>
+            </dl>
+            <!-- お名前 -->
+            <dl class="p-form__formArea__name">
+              <dt>
+                <label for="name">お名前</label>
+                <span class="p-form__formArea__required">必須</span>
+              </dt>
+              <dd>
+                <input type="text" id="name" name="name" required>
+              </dd>
+            </dl>
+            <!-- メールアドレス -->
+            <dl class="p-form__formArea__mail">
+              <dt>
+                <label for="mail">メールアドレス</label>
+                <span class="p-form__formArea__required">必須</span>
+              </dt>
+              <dd>
+                <input type="text" id="mail" name="mail" required>
+              </dd>
+            </dl>
+            <!-- 電話番号 -->
+            <dl class="p-form__formArea__tell">
+              <dt>
+                <label for="tell">電話番号</label>
+                <span class="p-form__formArea__required">必須</span>
+              </dt>
+              <dd>
+                <input type="text" id="tell" name="tell" required>
+              </dd>
+            </dl>
+            <!-- お問い合わせ内容 -->
+            <dl class="p-form__formArea__message">
+              <dt>
+                <label for="message">お問い合わせ内容</label>
+                <span class="p-form__formArea__required">必須</span>
+              </dt>
+              <dd>
+                <textarea class="p-form__form__message" id="message" name="message" required></textarea>
+              </dd>
+            </dl>
+            <!-- PRIVACY POLICY -->
+            <dl class="p-form__formArea__policy">
+              <dt>
+                <span>PRIVACY POLICY</span>
+              </dt>
+              <dd>
+                <h3>個人情報保護方針</h3>
+                <p>株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。</p>
+                <br>
+                <h4>1.個人情報の収集、利用</h4>
+                <p>当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。</p>
+                <br>
+                <h4>2.個人情報の第三者への開示と提供</h4>
+                <p>収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。<br>業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。</p>
+                <br>
+                <h4>3.個人情報の保護</h4>
+                <p>当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。</p>
+                <br>
+                <h4>4.法令および関連規範の遵守</h4>
+                <p>当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。</p>
+                <br>
+                <h4>5.個人情報の開示・訂正・削除</h4>
+                <p>当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。</p>
+                <br>
+                <h4>法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。</h4>
+                <br>
+                <h4>お問い合わせ窓口</h4>
+                <p>当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。</p>
+                <p>株式会社ファイアープレイス</p>
+                <p>044-589-4333</p>
+              </dd>
+            </dl>
+            <div class="p-form__formArea__agree">
+              <input type="checkbox" name="agree" id="agree" required="required">
+              <label for="agree">個人情報の取り扱いについて同意のうえ送信します。</label>
+            </div>
+            <div class="p-form__formArea__submit">
+              <input type="submit" value="送信">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- フッター -->
+  <footer class="l-footer">
+    <small class="p-copyright">©2018 DIGSMILE INC.</small>
+  </footer>
+  <!-- Javascript -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

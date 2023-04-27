@@ -1,0 +1,37 @@
+@use "../../../global/" as *;
+
+.p-works {
+  &__wrapper {
+    padding-top: rem(40);
+
+    @include mq(tab) {
+      padding-top: rem(60);
+    }
+    @include mq(pc) {
+      padding-top: 0;
+    }
+  }
+
+  &__container {
+    max-width: rem(520);
+    margin-left: 0;
+  }
+
+  &__img {
+    margin-top: rem(30);
+
+    &.c-musk__black::before {
+      background-color: rgba(0, 0, 0, 0.20);
+    }
+  }
+
+  &__text {
+    font-family: $f-family-body;
+    font-weight: $f-weight-medium;
+    margin-top: rem(28);
+  }
+
+  &__button {
+    margin-top: rem(28);
+  }
+}

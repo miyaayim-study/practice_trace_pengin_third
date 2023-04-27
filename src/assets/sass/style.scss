@@ -7,9 +7,7 @@
 //* =====================================================================
 //* Layout
 //* =====================================================================
-@use "layout/header";
-@use "layout/main";
-@use "layout/footer";
+@use "layout/**";
 
 //* =====================================================================
 //* Object
@@ -17,38 +15,14 @@
 //* -------------------------------------------------------
 //* Component
 //* -------------------------------------------------------
-@use 'object/component/button';
-@use 'object/component/section';
+@use "object/component/**";
 
 //* -------------------------------------------------------
 //* Project
 //* -------------------------------------------------------
-@use 'object/project/carousel';
-@use 'object/project/menu';
-@use 'object/project/copyright';
-@use 'object/project/newsList';
-
-@use 'object/project/_p-cover';
-@use 'object/project/_p-about';
-@use 'object/project/_p-works';
-@use 'object/project/_p-culture';
-@use 'object/project/_p-topics';
-@use 'object/project/_p-contact';
-
-@use 'object/project/about/_about-cover';
-@use 'object/project/about/_about-vision';
-@use 'object/project/about/_about-message';
-@use 'object/project/about/_about-company';
-
+@use "object/project/**";
 
 //* -------------------------------------------------------
 //* Utility
 //* -------------------------------------------------------
-@use "object/utility/cursor";
-@use "object/utility/display";
-@use "object/utility/font";
-@use "object/utility/size";
-@use "object/utility/text";
-@use "object/utility/hover";
-@use "object/utility/state";
-@use "object/utility/overflow";
+@use "object/utility/**";

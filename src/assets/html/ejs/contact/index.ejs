@@ -1,0 +1,27 @@
+<%# ページIDを入力する %>
+<% pageId = 'contact'; %>
+
+<%# グローバル変数（全部に渡す） %>
+<%
+baseUrl = json.pages[pageId].dir;
+imgUrl = baseUrl + 'assets/images/';
+%>
+
+<%# ヘッド %>
+<%- include(json.pages[pageId].dir + '_common/_head.ejs') %>
+
+<%# ヘッダー %>
+<%- include(json.pages[pageId].dir + '_common/_header.ejs') %>
+
+<%# メイン %>
+<!-- メイン -->
+<main class="l-main-contact u-overflow--hidden">
+  <%- include(json.pages[pageId].dir + '_contents/_contact/_cover.ejs') %>
+  <%- include(json.pages[pageId].dir + '_contents/_contact/_form.ejs') %>
+</main>
+
+<%# フッター %>
+<%- include(json.pages[pageId].dir + '_common/_footer.ejs') %>
+
+<%# スクリプト %>
+<%- include(json.pages[pageId].dir + '_common/_script.ejs') %>

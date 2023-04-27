@@ -1,0 +1,50 @@
+@use "../../../global/" as *;
+
+
+.p-contact {
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  background-color: #F2F2F2;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap:rem(30);
+    max-width: rem(520);
+    margin-left: 0;
+
+    @include mq(pc) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      max-width: rem(1100);
+      margin: auto;
+    }
+  }
+
+  &__img {
+    max-width: rem(580);
+
+    &.c-musk__black::before {
+      background-color: rgba(0, 0, 0, 0.20);
+    }
+  }
+
+  &__box {
+    @include mq(pc) {
+      max-width: rem(440);
+    }
+  }
+
+  &__text {
+    font-family: $f-family-body;
+    font-weight: $f-weight-medium;
+    font-size: rem(16);
+    line-height: lh(16, 32);
+    color: $color-black;
+    margin-top: rem(30);
+  }
+
+  &__button {
+    margin-top: rem(60);
+  }
+}

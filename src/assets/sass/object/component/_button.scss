@@ -1,21 +1,18 @@
 @use "../../global/" as *;
 
 .c-button {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // max-width: rem(160);
-  // height: rem(36);
-
-
   & a {
     padding: rem(10) rem(45);
     font-size: rem(11);
     font-family: $f-family-primary;
-    font-weight: $f-weigth-bold;
+    font-weight: $f-weight-bold;
     color: $color-white;
     background-color: #000;
     transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.6;
+    }
 
     @include mq(pc) {
       font-size: rem(12);

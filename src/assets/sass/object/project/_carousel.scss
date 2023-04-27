@@ -15,35 +15,37 @@
     // スライド要素の幅と高さを調整
     height: 100%;
     width: 100%;
-    background-position: center center;
-    background-size: cover;
-    position: relative; // beforeに指定しているabsoluteのために必要
+    // background-position: center center;
+    // background-size: cover;
+    background-position: 55% top;
+    background-size: auto 125%;
 
-    // 画像を暗くするオーバーレイ
-    &::before {
-      content: '';
-      // ↓全体を覆うように配置
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      // ↓暗いオーバーレイを半透明で配置
+    @include mq(tab) {
+      background-position: 55% top;
+      background-size: auto 122%;
+    }
+
+    @include mq(pc) {
+      background-position: 75% top;
+      background-size: auto 122%;
+    }
+
+    &.c-musk__black::before {
       background-color: rgba(0, 0, 0, 0.34);
     }
   }
 
   .slideImg--1 {
-    background-image: url("#{$img-path}cover.jpg");
+    background-image: url("#{$img-path}top/top_cover.jpg");
   }
   .slideImg--2 {
-    background-image: url("#{$img-path}cover2.jpg");
+    background-image: url("#{$img-path}top/top_cover2.jpg");
   }
   .slideImg--3 {
-    background-image: url("#{$img-path}cover3.jpg");
+    background-image: url("#{$img-path}top/top_cover3.jpg");
   }
   .slideImg--4 {
-    background-image: url("#{$img-path}cover4.jpg");
+    background-image: url("#{$img-path}top/top_cover4.jpg");
   }
 
   // ページネーション調整 

@@ -1,0 +1,251 @@
+@use "../../../global/" as *;
+
+.p-form {
+  margin-top: rem(80);
+
+  &__container {
+    margin: auto;
+    max-width: rem(700);
+
+    @include mq(tab) {
+      margin-top: rem(135);
+    }
+    @include mq(pc) {
+      margin-top: rem(120);
+    }
+
+  }
+
+  &__headMessage {
+    font-size: rem(14);
+    font-family: $f-family-YuGothic;
+    font-weight: $f-weight-medium;
+    color: $color-black;
+    line-height: lh(14, 24);
+    letter-spacing: ls(4);
+
+    @include mq(tab) {
+      font-size: rem(16);
+    line-height: lh(16, 24);
+    }
+  }
+
+  &__formArea {
+    margin-top: rem(48);
+
+    @include mq(tab) {
+      margin-top: rem(16);
+    }
+    @include mq(pc) {
+      margin-top: rem(50);
+    }
+
+    & dl + dl {
+      margin-top: rem(38);
+
+      @include mq(tab) {
+        margin-top: rem(35);
+      }
+      @include mq(pc) {
+        margin-top: rem(40);
+      }
+    }
+
+    & dt,
+    & dd {
+      font-family: $f-family-YuGothic;
+      font-size: rem(16);
+      color: $color-black;
+      letter-spacing: ls(4);
+    }
+
+    & dt {
+      font-weight: $f-weight-bold;
+    }
+
+    & dd {
+      font-weight: $f-weight-medium;
+    }
+
+    & input[type="radio"],
+    & input[type="checkbox"] {
+      cursor: pointer;
+      transform: scale(1.5);
+    }
+
+    &__required {
+      display: inline-block;
+      padding: rem(1) rem(5);
+      margin-left: rem(19);
+      font-size: rem(12);
+      color: $color-white;
+      font-weight: $f-weight-medium;
+      background-color: $color-black;
+
+      @include mq(tab) {
+      font-weight: $f-weight-bold;
+      }
+    }
+
+    &__kinds__radio {
+      display: flex;
+      flex-direction: column;
+      row-gap:  rem(14);
+      padding-left: rem(10);
+
+      @include mq(tab) {
+        flex-direction: row;
+        column-gap: rem(50);
+      }
+    }
+
+    &__companyName input,
+    &__name input,
+    &__mail input,
+    &__tell input,
+    &__message textarea,
+    &__policy dd {
+      width: 100%;
+      padding: rem(10);
+      border: rem(1) solid $color-black;
+    }
+
+    &__companyName input,
+    &__name input,
+    &__mail input,
+    &__tell input {
+      height: rem(48);
+
+      @include mq(pc) {
+        height: rem(41);
+      }
+    }
+
+    &__kinds input,
+    &__agree input {
+      accent-color: $color-black;
+    }
+
+    &__kinds label {
+      cursor: pointer;
+    }
+
+    &__message textarea {
+      height: rem(210);
+
+      @include mq(tab) {
+        height: rem(180);
+      }
+      @include mq(pc) {
+        height: rem(210);
+      }
+    }
+
+    &__policy {
+      & dt {
+        font-family: $f-family-Montserrat;
+        font-weight: $f-weight-extraBold;
+      }
+
+      & dd {
+        height: rem(226);
+        overflow: scroll;
+
+        & h3,
+        & h4,
+        & p {
+          font-family: $f-family-YuGothic;
+          font-size: rem(14);
+          line-height: lh(14, 24);
+          letter-spacing: ls(4);
+          color: $color-black;
+
+          @include mq(tab) {
+            font-size: rem(16);
+          line-height: lh(16, 24);
+          }
+        }
+
+        & h3 {
+          font-weight: $f-weight-bold;
+        }
+
+        & h4,
+        & p {
+          font-weight: $f-weight-medium;
+        }
+      }
+    }
+
+    & dt + dd {
+      margin-top: rem(10);
+    }
+
+    &__agree {
+      margin-top: rem(40);
+
+      @include mq(tab) {
+        text-align: center;
+      }
+
+      & label {
+        // position: relative; // チェックボックス作成用
+        font-family: $f-family-YuGothic;
+        font-size: rem(14);
+        cursor: pointer;
+        // padding-left: rem(26); // チェックボックスとの距離をつくるため
+
+        @include mq(tab) {
+          font-size: rem(16);
+        }
+        @include mq(pc) {
+          font-weight: $f-weight-regular;
+        }
+        // &::before { // 一から作るチェックボックス部分
+        //   content: ""; 
+        //   display: block;
+        //   position: absolute;
+        //   top: 50%; 
+        //   left: 0;
+        //   width: rem(16);
+        //   height: rem(16);
+        //   border: rem(1) solid $color-black; 
+        //   transform: translateY(-50%);
+        // }
+        // &:checked::after { // チェックボックスのチェック部分
+        //   content: "";
+        //   display: block;
+        //   position: absolute;
+        //   top: 40%;
+        //   left: rem(5);
+        //   width: rem(10);
+        //   height: rem(6);
+        //   box-sizing: border-box;
+        //   border-bottom: rem(1) solid $color-black;
+        //   border-left: rem(1) solid $color-black;
+        //   transform: rotate(-45deg) translateY(-50%);
+        // }
+      }
+    }
+
+    &__submit {
+      margin-top: rem(60);
+      text-align: center;
+
+
+      & input {
+        width: rem(160);
+        height: rem(36);
+        font-size: rem(14);
+        font-family: $f-family-Montserrat;
+        font-weight: $f-weight-bold;
+        color: #fff;
+        background-color: #000;
+        transition: all 0.3s ease;
+        &:hover {
+          opacity: 0.6;
+        }
+      }   
+    }
+  }
+}

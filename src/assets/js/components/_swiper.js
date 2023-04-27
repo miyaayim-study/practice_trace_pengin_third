@@ -1,18 +1,19 @@
 // Swiper読み込み
-import Swiper, { Pagination, Autoplay } from 'swiper'; // Swiper本体と最低限必要なモジュールの読み込み（データ量削減の為）
+import Swiper, { EffectFade, Pagination, Autoplay } from 'swiper'; // Swiper本体と最低限必要なモジュールの読み込み（データ量削減の為）
 // import Swiper from 'swiper/bundle'; // Swiper本体と全機能
 
 // SwiperのCSS読み込み
-import 'swiper/css'; // Swiper本体
-import 'swiper/css/pagination'; // ページネーション部分
-// import 'swiper/swiper-bundle.css'; // Swiper本体と全機能
+// import 'swiper/css/swiper.min.css'; // Swiperの最小限のCSSファイル
+// import 'swiper/css'; // Swiperの全体のCSSファイル（全機能含まない）
+import 'swiper/swiper-bundle.css'; // Swiperの全体のCSSファイル（全機能を含む）
+// import 'swiper/css/pagination'; // ページネーション機能部分のみ
 
 const options = {
-  modules: [Pagination, Autoplay],
+  modules: [EffectFade, Pagination, Autoplay],
   loop: true, // スライドの繰り返し
   spaceBetween: 8, // スライド間の距離(px)
   speed: 1000, // スライド切り替え時の推移時間(ms)
-  effect: 'slide', // スライド切り替え時のエフェクト
+  effect: 'fade', // スライド切り替え時のエフェクト
   // ページネーション
   pagination: {
     el: '.swiper-pagination', // ページネーションのセレクタを使用（必須）

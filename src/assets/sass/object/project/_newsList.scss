@@ -21,7 +21,7 @@
 
     &__data {
       font-family: $f-family-primary;
-      font-weight: $f-weigth-bold;
+      font-weight: $f-weight-bold;
       font-size: rem(10);
       letter-spacing: ls(15);
       color: #CECECE;
@@ -30,7 +30,7 @@
     &__text {
       margin-top: rem(10);
       font-family: $f-family-secondary;
-      font-weight: $f-weigth-bold;
+      font-weight: $f-weight-bold;
       font-size: rem(12);
       color: $color-black;
 

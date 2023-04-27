@@ -41,7 +41,7 @@ const wait = (done) => {
 
 
 // npx gulp
-export const run = gulp.parallel(html, compileSass, bundleWebpack, images); // npx gulp runでコマンドを実行とき、指定したタスクを同時に実行、`parallel`は並列実行のこと、実行するタスク同士が依存関係にない場合に有効。
+export const run = gulp.parallel(html, compileSass, bundleWebpack); // npx gulp runでコマンドを実行とき、指定したタスクを同時に実行、`parallel`は並列実行のこと、実行するタスク同士が依存関係にない場合に有効。
 export default gulp.series(run, wait, server, watchFiles); // npx gulpでコマンドを実行した時、指定したタスクを左から順番に実行、「ファイル生成 → ブラウザ開く → ファイル監視」の順番でタスク実行している。`series`は並列実行のこと、実行するタスク同士が依存関係にある場合に有効。
 
 // メモ

@@ -7,3 +7,15 @@
     padding-bottom: rem(120);
   }
 }
+
+.l-main-contact {
+  padding-bottom: rem(80);
+
+  @include mq(tab) {
+      padding-bottom: rem(197);
+  }
+
+  @include mq(pc) {
+    padding-bottom: rem(120);
+  }
+}
