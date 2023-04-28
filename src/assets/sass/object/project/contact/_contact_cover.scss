@@ -14,7 +14,7 @@
     height: rem(270);
     position: absolute;
     background-image: url("#{$img-path}/contact/contact_cover.jpg");
-    background-position: 85% 40%;
+    background-position: 78% 50%;
     background-size: cover;
     z-index: 1;
 
@@ -25,8 +25,8 @@
     @include mq(tab) {
       width: vw(tab, 578);
       height: rem(529);
-      background-position: 44% 42%;
-      background-size: auto 190%;
+      background-position: 45% 43%;
+      background-size: auto 200%;
     }
 
     @include mq(pc) {
@@ -49,7 +49,7 @@
     }
 
     @include mq(pc) {
-      width: vw(pc, 780);
+      width: 53vw;
       height: rem(451);
     }
   }
@@ -58,17 +58,17 @@
   &__catch {
     position: absolute;
     top: rem(129);
-    right: vw(sp, 21);
+    right: 5vw;
     z-index: 1;
 
     @include mq(tab) {
       top: rem(132);
-      right: vw(tab, 50);
+      right: 6.1vw;
     }
 
     @include mq(pc) {
       top: rem(156);
-      right: vw(pc, 150);
+      right: 9.1vw
     }
 
 
@@ -76,13 +76,14 @@
       display: block;
       font-size: rem(52);
       line-height: lh(72, 86);
-      letter-spacing: ls(63);
+      letter-spacing: 0.2rem;
       font-family: $f-family-Montserrat;
       font-weight: $f-weight-extraBold;
       color: $color-white;
 
       @include mq(pc) {
         font-size: rem(72);
+        letter-spacing: 0.27rem;
       }
     }
 
@@ -103,11 +104,12 @@
   }
   &__scroll {
     position: absolute;
-    bottom: rem(20);
-    left: 0;
+    bottom: 1.05rem;
+    left: -0.46rem;
     font-family: $f-family-primary;
     font-weight: $f-weight-extraBold;
     font-size: rem(12);
+    letter-spacing: 0.03rem;
     color: #000;
     transform: rotate(-90deg);
     z-index: 1;
@@ -122,7 +124,7 @@
       content: "";
       position: absolute;
       height: rem(1);
-      width: rem(110);
+      width: 7.3rem;
       background-color: #000;
       top: 50%;
       margin-left: rem(8);

@@ -21,14 +21,14 @@
     }
 
     @include mq(pc) {
-      width: vw(pc, 780);
+      width: 53vw;
     }
   }
 
   &__catch {
     position: absolute;
     top: vh(sp, 175);
-    right: vw(sp, 20);
+    right: 4.8vw;
     z-index: 1;
 
     @include mq(tab) {
@@ -37,19 +37,20 @@
     }
 
     @include mq(pc) {
-      top: vh(pc, 157);
-      right: vw(pc, 194);
+      top: 21.5vh;
+      right: 12.3vw;
     }
 
     &__text {
       display: block;
-      font-size: rem(16);
-      line-height: 1.7;
-      letter-spacing: ls(63);
+      font-size: 0.9rem;
+      line-height: 1.55;
+      letter-spacing: 0.07rem;
       color: $color-white;
 
       @include mq(pc) {
-        letter-spacing: ls(0);
+        font-size: 1rem;
+        letter-spacing: 0.09rem;
       }
     }
 
@@ -57,14 +58,15 @@
       display: block;
       font-size: rem(56);
       line-height: lh(56, 53);
-      margin-top: rem(28);
-      letter-spacing: ls(63);
+      margin-top: 1rem;
+      letter-spacing: 0.2rem;
       color: $color-white;
 
       @include mq(pc) {
         font-size: rem(72);
         line-height: lh(72, 86);
-        letter-spacing: ls(0);
+        letter-spacing: 0;
+        margin-top: 0.7rem;
       }
     }
   }

@@ -3,21 +3,21 @@
 // メニューボタン
 .p-menuButton {
   position: fixed;
-  top: rem(24);
-  right: rem(15);
+  top: 1.35rem;
+  right: 0.95rem;
   display: flex;
   align-items: center;
-  column-gap: rem(7);
+  column-gap: 0.38rem;
   z-index: 3;
 
   @include mq(tab) {
-    top: rem(37);
-    right: rem(30);
+    top: 2.2rem;
+    right: 1.85rem;
   }
 
   @include mq(pc) {
-    top: rem(36);
-    right: rem(58);
+    top: 2.1rem;
+    right: 2.5rem;
   }
 
   &__trigger {
@@ -108,22 +108,24 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      row-gap: rem(40);
-      padding-top: vh(pc, 180);
+      row-gap: 1.43rem;
+      padding-top: 23.5vh;
 
       &__logo {
-        max-width: rem(42.15);
+        padding-left: 1.2rem;
       }
 
       &__list {
         display: flex;
         flex-direction: column;
         align-items: center;
-        row-gap: rem(30);
+        row-gap: 1.26rem;
         color: $color-white;
         font-family: $f-family-primary;
         font-weight: $f-weight-extraBold;
         font-size: rem(20);
+        letter-spacing: ls(68);
+        padding-left: 1.2rem;
       }
     }
   }
@@ -131,10 +133,10 @@
 
 .is-open {
   & .p-menu__bg {
-    width: calc(100% - rem(520));
+    width: calc(100% - 31.5rem);
   }
 
   & .p-menu__wrap {
-    width: rem(520);
+    width: 31.5rem;
   }
 }

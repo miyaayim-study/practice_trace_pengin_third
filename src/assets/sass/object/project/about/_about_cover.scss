@@ -15,7 +15,7 @@
     position: absolute;
     background-image: url("#{$img-path}about/about_cover.jpg");
     background-position: 54% top;
-    background-size: auto 180%;
+    background-size: auto 175%;
 
     &.c-musk__black::before {
       background-color: rgba(0, 0, 0, 0.34);
@@ -24,14 +24,14 @@
     @include mq(tab) {
       width: vw(tab, 587);
       height: rem(529);
-      background-position: 48% 5%;
-      background-size: auto 150;
+      background-position: 48% 3%;
+      background-size: auto 160%;
     }
 
     @include mq(pc) {
       width: vw(pc, 1100);
       height: rem(387);
-      background-position: center 10%;
+      background-position: center 13%;
       background-size: cover;
     }
   }
@@ -48,7 +48,7 @@
     }
 
     @include mq(pc) {
-      width: vw(pc, 780);
+      width: 53vw;
       height: rem(464);
     }
   }
@@ -62,12 +62,12 @@
 
     @include mq(tab) {
       top: rem(220);
-      right: vw(tab, 100);
+      right: 12.5vw;
     }
 
     @include mq(pc) {
-      top: rem(156);
-      right: vw(pc, 170);
+      top: 9.8rem;
+      right: 10.4vw;
     }
 
     
@@ -80,11 +80,12 @@
       color: $color-white;
 
       @include mq(tab) {
-        letter-spacing: ls(63);
+        letter-spacing: 0.2rem;
       }
 
       @include mq(pc) {
         font-size: rem(72);
+        letter-spacing: 0.27rem;
       }
     }
 
@@ -94,10 +95,13 @@
       font-family: $f-family-NotoSans;
       font-weight: $f-weight-bold;
       color: $color-white;
-      margin-top: rem(5);
+      margin-top: 0.2rem;
 
       @include mq(tab) {
         letter-spacing: ls(5);
+      }
+      @include mq(pc) {
+        letter-spacing: 0.18rem;
       }
     }
   }

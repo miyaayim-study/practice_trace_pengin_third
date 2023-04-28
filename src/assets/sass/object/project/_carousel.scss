@@ -21,13 +21,13 @@
     background-size: auto 125%;
 
     @include mq(tab) {
-      background-position: 55% top;
-      background-size: auto 122%;
+      background-position: 54.2% top;
+      background-size: auto 125%;
     }
 
     @include mq(pc) {
-      background-position: 75% top;
-      background-size: auto 122%;
+      background-position: 76% top;
+      background-size: auto 119%;
     }
 
     &.c-musk__black::before {

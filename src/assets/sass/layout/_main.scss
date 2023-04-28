@@ -1,10 +1,14 @@
 @use "../global/" as *;
 
 .l-main-about {
-  padding-bottom: rem(80);
+  padding-bottom: 4.22rem;
+
+  @include mq(tab) {
+    padding-bottom: 4.41rem;
+  }
 
   @include mq(pc) {
-    padding-bottom: rem(120);
+    padding-bottom: 6.86rem;
   }
 }
 

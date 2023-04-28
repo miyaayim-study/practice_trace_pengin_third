@@ -9,8 +9,8 @@
   @include mq(pc) {
     display: flex;
     justify-content: space-between;
-    padding-top: rem(80);
-    padding-bottom: rem(60);
+    padding-top: 4.5rem;
+    padding-bottom: 0.8rem;
   }
 }
 
@@ -27,7 +27,7 @@
 .c-sectionTitle {
   font-family: $f-family-heading;
   font-size: rem(28);
-  letter-spacing: ls(68);
+  letter-spacing: 0.12rem;
   color: #333;
 
   @include mq(tab) {

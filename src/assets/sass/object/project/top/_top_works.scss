@@ -2,10 +2,10 @@
 
 .p-works {
   &__wrapper {
-    padding-top: rem(40);
+    padding-top: 2rem;
 
     @include mq(tab) {
-      padding-top: rem(60);
+      padding-top: 3.25rem;
     }
     @include mq(pc) {
       padding-top: 0;
@@ -18,7 +18,7 @@
   }
 
   &__img {
-    margin-top: rem(30);
+    margin-top: 1.5rem;
 
     &.c-musk__black::before {
       background-color: rgba(0, 0, 0, 0.20);
@@ -32,6 +32,6 @@
   }
 
   &__button {
-    margin-top: rem(28);
+    margin-top: 1.5rem;
   }
 }

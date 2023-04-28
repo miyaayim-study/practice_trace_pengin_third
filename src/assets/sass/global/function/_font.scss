@@ -65,5 +65,5 @@ $viewport-height: (
 
 // letter-spacing自動計算
 @function ls($spacing) {
-	@return math.div($spacing, 1000) + em;
+	@return math.div($spacing, 1000) + rem;
 }

@@ -16,9 +16,8 @@ export { allClean, htmlClean, cssClean, jsClean, imgClean }; // ファイル削�
 export { html as htmlTest }; // HTML構文チェック & HTML複製 関連
 export { compileSass as sassTest }; // Sassコンパイル 関連
 export { bundleWebpack as webpackTest }; // webpack 関連
-
-// gulp-imagemin（画像圧縮） 関連
-export {default as images } from "./gulp/task/images.mjs";
+  
+export { images as images }; // webpack 関連
 
 // ファイル監視 & ブラウザリロード
 const watchFiles = (done) => { // "watchFiles"というgulpタスクを定義、 (done)はラストのdone()でタスク完了の合図を受け取るためのもの
