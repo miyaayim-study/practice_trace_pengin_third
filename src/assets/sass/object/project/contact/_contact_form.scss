@@ -25,6 +25,7 @@
   &__headMessage {
     font-size: rem(14);
     font-family: $f-family-YuGothic;
+    font-feature-settings: "palt";
     font-weight: $f-weight-medium;
     color: $color-black;
     line-height: lh(14, 24);
@@ -48,6 +49,7 @@
     & dt,
     & dd {
       font-family: $f-family-YuGothic;
+      font-feature-settings: "palt";
       font-size: rem(16);
       color: $color-black;
     }
@@ -191,9 +193,9 @@
         & h4,
         & p {
           font-family: $f-family-YuGothic;
+          font-feature-settings: "palt";
           font-size: rem(14);
           line-height: lh(14, 24);
-          letter-spacing: ls(4);
           color: $color-black;
 
           @include mq(tab) {
@@ -224,6 +226,7 @@
       & label {
         // position: relative; // チェックボックス作成用
         font-family: $f-family-YuGothic;
+        font-feature-settings: "palt";
         font-size: rem(14);
         cursor: pointer;
         // padding-left: rem(26); // チェックボックスとの距離をつくるため

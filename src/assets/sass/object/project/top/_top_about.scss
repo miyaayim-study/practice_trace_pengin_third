@@ -52,7 +52,7 @@
     color: $color-black;
     margin-top: 1.1rem;
     font-family: $f-family-YuGothic;
-    // font-feature-settings: "palt";
+    font-feature-settings: "palt";
     
     @include mq(tab) {
       font-size: rem(16);

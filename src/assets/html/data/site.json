@@ -1,22 +1,25 @@
 {
   "siteInfo": {
-    "name": "DESIGN FOR SMILE.",
+    "siteTitle": "DESIGN FOR SMILE.",
     "siteUrl": "SiteDomain"
   },
   "pages": {
     "top": {
       "dir": "",
       "name": "top",
+      "pageTitle": "デザインで人を笑顔にする会社 DESIGN FOR SMILE.",
       "description": "デザインで人を笑顔にする会社 DESIGN FOR SMILE."
     },
     "about": {
       "dir": "../",
       "name": "about",
+      "pageTitle": "DIGSMAILEについて",
       "description": "DIGSMAILEについて"
     },
     "contact": {
       "dir": "../",
       "name": "contact",
+      "pageTitle": "お問い合わせ",
       "description": "お問い合わせ"
     }
   }
