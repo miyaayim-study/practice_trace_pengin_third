@@ -4,7 +4,7 @@
 $breakpoints: (
 	sp: "(max-width: 768px)",
 	tab: "(min-width: 768px)",
-	pc: "(min-width: 1280px)",
+	pc: "(min-width: 1100px)",
 );
 
 @mixin mq($bp) {
