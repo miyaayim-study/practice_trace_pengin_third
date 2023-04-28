@@ -223,11 +223,17 @@
         text-align: center;
       }
 
+      & input {
+        vertical-align: middle;
+      }
+
       & label {
         // position: relative; // チェックボックス作成用
         font-family: $f-family-YuGothic;
         font-feature-settings: "palt";
         font-size: rem(14);
+        vertical-align: middle;
+        margin-left: 0.5rem;
         cursor: pointer;
         // padding-left: rem(26); // チェックボックスとの距離をつくるため
 

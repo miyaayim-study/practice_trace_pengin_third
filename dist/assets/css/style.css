@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Noto+Sans+JP:wght@400;700&display=swap");
 html {
   box-sizing: border-box;
   word-break: normal;
@@ -1411,11 +1412,16 @@ li {
     text-align: center;
   }
 }
+.p-form__formArea__agree input {
+  vertical-align: middle;
+}
 .p-form__formArea__agree label {
+  margin-left: 0.5rem;
   font-family: "Yu Gothic", sans-serif;
   font-size: 0.875rem;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
+  vertical-align: middle;
   cursor: pointer;
 }
 @media (min-width: 768px) {

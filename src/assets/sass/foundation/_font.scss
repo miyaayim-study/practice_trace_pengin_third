@@ -1,0 +1,9 @@
+// @font-face {
+//   font-family: 'font名（Noto Sans CJK JP Subset, YakuHanJP etc...）';
+//   font-style: スタイル名（normal, bold etc..）;
+//   font-weight: fontの太さ（400, 700 etc...）;
+//   src: url('fontデータが保存されている場所までのパス') format('フォーマット名'),
+//     url('') format('') //カンマ区切りで複数読み込む事が可能
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Noto+Sans+JP:wght@400;700&display=swap');
