@@ -2,9 +2,9 @@
 // 説明：https: //tenderfeel.github.io/SassReference/sass-script/interpolation.html
 
 $breakpoints: (
-	sp: '(max-width: 768px)',
-	tab: '(min-width: 768px)',
-	pc: '(min-width: 1280px)'
+	sp: "(max-width: 768px)",
+	tab: "(min-width: 768px)",
+	pc: "(min-width: 1280px)",
 );
 
 @mixin mq($bp) {

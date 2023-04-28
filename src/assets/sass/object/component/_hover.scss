@@ -1,13 +1,12 @@
 @use "../../global/" as *;
 
-
 // 下線
 .c-hover__underLine--center {
   & a {
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       bottom: rem(-3);
@@ -18,7 +17,7 @@
       background-color: $color-white;
       transform-origin: center top;
       transform: scale(0, 1);
-      transition: transform .3s;
+      transition: transform 0.3s;
     }
 
     &:hover::before {

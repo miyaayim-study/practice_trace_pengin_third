@@ -54,7 +54,6 @@
     }
   }
 
-
   &__catch {
     position: absolute;
     top: rem(129);
@@ -68,9 +67,8 @@
 
     @include mq(pc) {
       top: rem(156);
-      right: 9.1vw
+      right: 9.1vw;
     }
-
 
     &__title {
       display: block;

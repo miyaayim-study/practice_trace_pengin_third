@@ -4,12 +4,11 @@
 // line-height自動計算（@mixin）
 // デザインカンプ記載の数値を2つ入力するだけで自動計算
 // @mixin line_height($pixels, $height) {
-  // font-size: $pixels * 1px;  //フォントサイズも入れてくれるがピクセル単位
+// font-size: $pixels * 1px;  //フォントサイズも入れてくれるがピクセル単位
 //   line-height: math.div($height, $pixels);
 // }
 
 // letter-spacing自動計算（@mixin）
 // @mixin letter_spacing($spacing) {
-  // letter-spacing: math.div($spacing, 1000) + rem;
+// letter-spacing: math.div($spacing, 1000) + rem;
 // }
-

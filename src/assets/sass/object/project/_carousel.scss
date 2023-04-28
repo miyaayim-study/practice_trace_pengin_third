@@ -48,7 +48,7 @@
     background-image: url("#{$img-path}top/top_cover4.jpg");
   }
 
-  // ページネーション調整 
+  // ページネーション調整
   .swiper-pagination-bullet {
     width: rem(8) !important;
     height: rem(8) !important;
@@ -57,12 +57,12 @@
     @include mq(tab) {
       width: rem(10) !important;
       height: rem(10) !important;
-    margin: 0 rem(5) 0 rem(5) !important;
+      margin: 0 rem(5) 0 rem(5) !important;
     }
     @include mq(pc) {
       width: rem(12) !important;
       height: rem(12) !important;
-    margin: 0 rem(6) 0 rem(6) !important;
+      margin: 0 rem(6) 0 rem(6) !important;
     }
 
     background: $color-black !important;

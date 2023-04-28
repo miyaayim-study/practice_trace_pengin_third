@@ -11,10 +11,10 @@
     margin-top: 7.1rem;
   }
 
-  &__sectionTitle{
+  &__sectionTitle {
     font-size: rem(32);
     padding-bottom: 1.4rem;
-    border-bottom: rem(1) solid #DDD;
+    border-bottom: rem(1) solid #ddd;
   }
 
   &__info {
@@ -37,7 +37,7 @@
       font-family: $f-family-NotoSans;
       font-size: rem(14);
       text-align: left;
-      border-bottom: rem(1) solid #DDD;
+      border-bottom: rem(1) solid #ddd;
 
       @include mq(tab) {
         font-size: rem(16);
@@ -50,10 +50,10 @@
       font-weight: $f-weight-bold;
 
       @include mq(tab) {
-      width: rem(144);
+        width: rem(144);
       }
     }
-    
+
     & td {
       font-weight: $f-weight-regular;
     }

@@ -16,7 +16,7 @@
   padding-bottom: rem(80);
 
   @include mq(tab) {
-      padding-bottom: rem(197);
+    padding-bottom: rem(197);
   }
 
   @include mq(pc) {

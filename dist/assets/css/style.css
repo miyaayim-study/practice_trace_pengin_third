@@ -428,7 +428,7 @@ li {
 
 .c-sectionBg {
   position: relative;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .c-sectionBg--top {
@@ -438,7 +438,7 @@ li {
   z-index: -1;
   width: 100%;
   height: 6.25rem;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .p-carousel {
@@ -673,13 +673,13 @@ li {
 .p-newsList__item {
   width: 100%;
   padding-bottom: 0.33rem;
-  border-bottom: 0.0625rem solid #DDDDDD;
+  border-bottom: 0.0625rem solid #dddddd;
 }
 .p-newsList__item__data {
   font-family: "Montserrat", sans-serif;
   font-size: 0.625rem;
   font-weight: 700;
-  color: #CECECE;
+  color: #cecece;
   letter-spacing: 0.015rem;
 }
 .p-newsList__item__text {
@@ -713,7 +713,7 @@ li {
 .p-company__sectionTitle {
   padding-bottom: 1.4rem;
   font-size: 2rem;
-  border-bottom: 0.0625rem solid #DDD;
+  border-bottom: 0.0625rem solid #ddd;
 }
 .p-company__info {
   width: 100%;
@@ -736,7 +736,7 @@ li {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 0.875rem;
   text-align: left;
-  border-bottom: 0.0625rem solid #DDD;
+  border-bottom: 0.0625rem solid #ddd;
 }
 @media (min-width: 768px) {
   .p-company__info th, .p-company__info td {
@@ -944,7 +944,7 @@ li {
   max-width: 30.875rem;
   padding: 7.2rem 1.75rem 4.8rem;
   margin-left: auto;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 @media (min-width: 768px) {
   .p-message__container {
@@ -1540,7 +1540,7 @@ li {
 .p-contact {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 @media (min-width: 768px) {
   .p-contact {

@@ -5,10 +5,10 @@
   padding-left: rem(15);
   padding-right: rem(15);
 
-    @include mq(tab) {
-      padding-left: rem(50);
-      padding-right: rem(50);
-    }
+  @include mq(tab) {
+    padding-left: rem(50);
+    padding-right: rem(50);
+  }
 
   &__container {
     margin: auto;
@@ -68,11 +68,10 @@
       transform: scale(1.7);
     }
 
-
     &__kinds__radio {
       display: flex;
       flex-direction: column;
-      row-gap:  0.5rem;
+      row-gap: 0.5rem;
       padding-left: 0.9rem;
       margin-top: 0.625rem;
 
@@ -155,7 +154,6 @@
       }
     }
 
-    
     &__required {
       display: inline-block;
       padding: 0.25rem 0.4rem 0.1rem;
@@ -170,7 +168,6 @@
         font-weight: $f-weight-bold;
       }
     }
-
 
     &__policy {
       margin-top: 1.5rem;
@@ -215,7 +212,6 @@
       }
     }
 
-
     &__agree {
       margin-top: rem(40);
 
@@ -244,14 +240,14 @@
           font-weight: $f-weight-regular;
         }
         // &::before { // 一から作るチェックボックス部分
-        //   content: ""; 
+        //   content: "";
         //   display: block;
         //   position: absolute;
-        //   top: 50%; 
+        //   top: 50%;
         //   left: 0;
         //   width: rem(16);
         //   height: rem(16);
-        //   border: rem(1) solid $color-black; 
+        //   border: rem(1) solid $color-black;
         //   transform: translateY(-50%);
         // }
         // &:checked::after { // チェックボックスのチェック部分
@@ -290,7 +286,7 @@
         &:hover {
           opacity: 0.6;
         }
-      }   
+      }
     }
   }
 }

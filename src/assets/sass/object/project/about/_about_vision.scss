@@ -3,9 +3,9 @@
 .p-vision {
   margin-top: 4.5rem;
 
-    @include mq(pc) {
-      margin-top: 7rem;
-    }
+  @include mq(pc) {
+    margin-top: 7rem;
+  }
 
   &__container {
     width: fit-content;
@@ -13,11 +13,9 @@
     @include mq(tab) {
       width: 29.2rem;
       margin: auto;
-
     }
     @include mq(pc) {
       width: 39.5rem;
-
     }
   }
 
@@ -39,7 +37,7 @@
 
   &__box {
     margin: 1.45rem auto 0;
-    
+
     @include mq(pc) {
       margin-top: 1.1rem;
     }
@@ -57,12 +55,11 @@
 
       & + p {
         margin-top: 1.75rem;
-        
+
         @include mq(pc) {
           margin-top: 2rem;
         }
       }
-
     }
   }
 }

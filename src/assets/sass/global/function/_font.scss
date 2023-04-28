@@ -10,27 +10,23 @@
 //   @return
 // }
 
-
 // remをpx感覚で使う関数
 $baseFontsize: 16;
 @function rem($pixel) {
 	@return math.div($pixel, $baseFontsize) * 1rem;
 }
 
-
-
 // vwをpx感覚で使う関数（自作）
 $viewport-width: (
 	sp: 375,
 	tab: 768,
-	pc: 1440
+	pc: 1440,
 );
 
-@function vw($vp,$pixel) {
+@function vw($vp, $pixel) {
 	$viewport: map-get($viewport-width, $vp); // ピクセル数を取得
 	@return math.div($pixel, $viewport) * 100vw; // vwに変換して返す
 }
-
 
 // vw別パターン（動作は同じ）
 // @function vw-sp($pixel) {
@@ -47,15 +43,13 @@ $viewport-width: (
 $viewport-height: (
 	sp: 667,
 	tab: 1024,
-	pc: 740
+	pc: 740,
 );
 
 @function vh($vp, $pixel) {
 	$viewport: map-get($viewport-height, $vp); // ピクセル数を取得
 	@return math.div($pixel, $viewport) * 100vh; // vhに変換して返す
 }
-
-
 
 // line-height自動計算
 // デザインカンプ記載の数値を2つ入力するだけで自動計算
