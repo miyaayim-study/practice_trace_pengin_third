@@ -15,20 +15,8 @@
     // スライド要素の幅と高さを調整
     height: 100%;
     width: 100%;
-    // background-position: center center;
-    // background-size: cover;
-    background-position: 55% top;
-    background-size: auto 125%;
-
-    @include mq(tab) {
-      background-position: 54.2% top;
-      background-size: auto 125%;
-    }
-
-    @include mq(pc) {
-      background-position: 76% top;
-      background-size: auto 119%;
-    }
+    background-position: center top;
+    background-size: cover;
 
     &.c-musk__black::before {
       background-color: rgba(0, 0, 0, 0.34);
@@ -37,15 +25,55 @@
 
   .slideImg--1 {
     background-image: url("#{$img-path}top/top_cover.jpg");
+
+    @include mq(sp) {
+      background-position: 55% top;
+      background-size: auto 125%;
+      background-size: cover;
+    }
+
+    @include mq(tab) {
+      background-position: 54.2% top;
+      background-size: auto 125%;
+      background-size: cover;
+    }
+
+    @include mq(pc) {
+      background-position: 76% top;
+      background-size: auto 119%;
+      background-size: cover;
+    }
   }
   .slideImg--2 {
     background-image: url("#{$img-path}top/top_cover2.jpg");
+
+    @include mq(sp) {
+      background-position: 30% top;
+    }
+    @include mq(tab) {
+      background-position: center top;
+    }
   }
   .slideImg--3 {
     background-image: url("#{$img-path}top/top_cover3.jpg");
+
+    @include mq(sp) {
+      background-position: center top;
+    }
+    @include mq(tab) {
+      background-position: 60% top;
+    }
   }
   .slideImg--4 {
     background-image: url("#{$img-path}top/top_cover4.jpg");
+
+    @include mq(sp) {
+      background-position: 65% top;
+    }
+    @include mq(tab) {
+      background-position: 65% top;
+      background-size: cover;
+    }
   }
 
   // ページネーション調整

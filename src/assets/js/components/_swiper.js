@@ -27,6 +27,8 @@ const options = {
   },
 };
 
-const swiper = new Swiper('.swiper', options);
+// const swiper = new Swiper('.swiper', options); // ファイル分割するためこのコード文は使用しない
 
-export default swiper;
+const carousel = () => new Swiper('.swiper', options);
+
+export default carousel;
