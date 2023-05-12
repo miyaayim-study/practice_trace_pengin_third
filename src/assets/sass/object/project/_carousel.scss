@@ -40,6 +40,7 @@
 
     @include mq(pc) {
       background-position: 76% top;
+      background-position: center 0;
       background-size: auto 119%;
       background-size: cover;
     }

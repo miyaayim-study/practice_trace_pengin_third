@@ -71,6 +71,17 @@
   }
 }
 
+// メインビジュアルから外れたら色変更
+.p-menuButton.is-black .p-menuButton__trigger__bar {
+  background-color: $color-black;
+  transition: all 0.3s;
+}
+
+.p-menuButton.is-black .p-menuButton__title {
+  color: $color-black;
+  transition: all 0.3s;
+}
+
 // メニューナビゲーション
 .p-menu {
   position: fixed;

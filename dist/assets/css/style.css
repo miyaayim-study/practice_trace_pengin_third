@@ -278,7 +278,7 @@ li {
 }
 
 .l-header__logo {
-  position: absolute;
+  position: fixed;
   top: 0.8rem;
   left: 0.94rem;
   z-index: 2;
@@ -296,6 +296,15 @@ li {
     left: 3.625rem;
     max-width: 16.25rem;
   }
+}
+.l-header__logo img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.l-header__logo.is-black img {
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
 }
 
 .l-main-about {
@@ -479,6 +488,7 @@ li {
 @media (min-width: 1100px) {
   .p-carousel .slideImg--1 {
     background-position: 76% top;
+    background-position: center 0;
     background-size: auto 119%;
     background-size: cover;
   }
@@ -621,6 +631,18 @@ li {
 .is-open .p-menuButton__trigger__bar:nth-of-type(3) {
   -webkit-transform: translate(-50%, -50%) rotate(25deg);
           transform: translate(-50%, -50%) rotate(25deg);
+}
+
+.p-menuButton.is-black .p-menuButton__trigger__bar {
+  background-color: #333;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.p-menuButton.is-black .p-menuButton__title {
+  color: #333;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .p-menu {
