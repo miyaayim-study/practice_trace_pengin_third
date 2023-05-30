@@ -10,6 +10,6 @@ menuLists.forEach((value) => {
   const href = ( pageId === value.pageId ? '#' : baseUrl + value.baseUrl );
 %>
 <li>
-  <p class="c-hover__underLine--center"><a href="<%= href %>"><%= value.pageName %></a></p>
+  <p class="c-hover__underLine--center"><a class="js-jump" href="<%= href %>"><%= value.pageName %></a></p>
 </li>
 <% }); %>

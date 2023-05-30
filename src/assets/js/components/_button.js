@@ -1,6 +1,7 @@
 const menuButton = () => {
   const button = document.querySelector('.js-menuButton');
   const menu = document.querySelector('.js-menu');
+  const jumps = document.querySelectorAll('.js-jump');
   const headerLogo = document.querySelector('.js-headerLogo');
   const coverBgHeight = document.querySelector('.js-coverBg').offsetHeight; // 要素の高さを含む、上下のパディングやボーダーを含んだ高さを取得（offsetHeight）
   const coverImgHeight = document.querySelector('.js-coverImg').offsetHeight;
@@ -32,7 +33,7 @@ const menuButton = () => {
     isMenuOpened = !isMenuOpened; // isMenuOpenedの値を反転させる
   });
 
-  window.addEventListener('resize', () => {
+  const closeMenu = () => {
     button.classList.remove('is-open');
     menu.classList.remove('is-open');
     if (window.pageYOffset > coverBgHeight - 40) { // 垂直方向スクロール量がカバー背景高さ以上にだった場合
@@ -42,6 +43,17 @@ const menuButton = () => {
     document.removeEventListener('touchmove', handle);
     document.removeEventListener('mousewheel', handle);
     isMenuOpened = true; // スクロール操作有効中のフラグにする
+  };
+
+  window.addEventListener('resize', () => {
+    closeMenu();
+  });
+
+  // メニューリンク押下時メニュー閉
+  jumps.forEach((jump) => {
+    jump.addEventListener('click', () => {
+      closeMenu();
+    });
   });
 
   window.addEventListener('load', () => { // 読み込みが完了して要素の高さが判明してから高さを取得するようにしている
@@ -54,7 +66,6 @@ const menuButton = () => {
     }
     // スクロール操作したときの記述
     window.addEventListener('scroll', () => { // スクロールしたときに実行
-
       // メニュー開閉関係なく実行
       if (window.pageYOffset > coverImgHeight - 40) { // 垂直方向スクロール量がカバー背景高さ以上になったとき
         headerLogo.classList.add('is-black'); // ヘッダーロゴにクラス付与
@@ -68,7 +79,6 @@ const menuButton = () => {
         } else {
           button.classList.remove('is-black'); // メニューボタンにクラス削除
         }
-
       }
     });
   });
